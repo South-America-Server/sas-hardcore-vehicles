@@ -1,0 +1,60 @@
+Vehicle : "{3336BE330C4F355B}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_ammo.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68F731BA803CC701}" {
+     SourceMaterial "Ural_Body"
+     AssignedMaterial "{47F289EF63FBC240}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Body_UC.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_sFaction "US"
+    m_aAutoLabels {
+     FACTION_US SIZE_M VEHICLE_TRUCK
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EF07CE051E72289}" {
+      m_BudgetType RANK_PRIVATE
+      m_Value 1
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5916C58171230A92}" {
+   MaxCumulativeVolume 250000
+   MultiSlots {
+    MultiSlotConfiguration "{5A60D38EDB3709A9}" {
+     SlotTemplate InventoryStorageSlot Bandages {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{68F731BAAB043799}" {
+     SlotTemplate InventoryStorageSlot Jerrycan {
+      Enabled 1
+     }
+    }
+    MultiSlotConfiguration "{68F731BAAB043769}" {
+     SlotTemplate InventoryStorageSlot Jerrycan {
+      Enabled 1
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "US"
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo Label_L {
+     Prefab "{92F1415E436B03A9}Prefabs/Vehicles/Shared/decal_vehicle_label_small_UC.et"
+    }
+    EntitySlotInfo Label_R {
+     Prefab "{92F1415E436B03A9}Prefabs/Vehicles/Shared/decal_vehicle_label_small_UC.et"
+    }
+   }
+  }
+ }
+}

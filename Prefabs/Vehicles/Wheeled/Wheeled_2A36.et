@@ -1,0 +1,25 @@
+Vehicle : "{1F9BB80C3EC3C891}Prefabs/Vehicles/Core/Wheeled_Car_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 2000
+     }
+     SCR_EntityBudgetValue "{68E9518F56D2A2DC}" {
+      m_Value 5
+     }
+     SCR_EntityBudgetValue "{6A852B364240F92F}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 300
+     }
+     SCR_EntityBudgetValue "{6A852B364E6F09E2}" {
+      m_BudgetType WCS_COOLDOWN_DURATION
+      m_Value 100
+     }
+    }
+   }
+  }
+ }
+}

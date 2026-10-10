@@ -1,0 +1,31 @@
+Vehicle : "{048D9D6B2DB1303D}Prefabs/Vehicles/Core/AUS_Helicopter_Base.et" {
+ ID "5DB688595BAB2FD7"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 7000
+     }
+     SCR_EntityBudgetValue "{663CB8175828CF18}" {
+      m_BudgetType RANK_CAPTAIN
+      m_Value 5
+     }
+    }
+   }
+  }
+  SCR_FuelConsumptionComponent "{65C8D63DE15D05BC}" {
+   m_fFuelConsumption 40
+   m_fFuelConsumptionIdle 1
+  }
+  SCR_FuelManagerComponent "{5622A70CD78A9E2C}" {
+   FuelNodes {
+    SCR_FuelNode "{5622A70CD4036C5A}" {
+     MaxFuel 1130
+     m_fInitialFuelTankState 848
+     m_iFuelLeakSpeed 25
+    }
+   }
+  }
+ }
+}

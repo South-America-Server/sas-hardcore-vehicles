@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F2E8F463BCF1D580}Prefabs/Vehicles/Wheeled/Conflict_Variants/BTR70_KBA105_Green_Conflict.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

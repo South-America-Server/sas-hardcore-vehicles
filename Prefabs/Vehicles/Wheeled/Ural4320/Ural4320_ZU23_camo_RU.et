@@ -1,0 +1,113 @@
+Vehicle : "{F203E2146C425605}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_ZU23_camo.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68FE4EABF5F9D52A}" {
+     SourceMaterial "Ural_Body"
+     AssignedMaterial "{74641A1DB0B893C8}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Body_RU.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#WCS-Vehicle_Ural4320_ZU23_Name"
+    m_Image "{6A3BAFBA1E2BEC09}UI/Textures/EditorPreviews/Vehicles/Wheeled/Ural4320/Ural432_ZU23_camo.edds"
+    m_sFaction "USSR"
+    m_aAuthoredLabels +{
+    }
+    m_aAutoLabels +{
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{6052A79ADDA6C7A8}" {
+     }
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 1500
+     }
+     SCR_EntityBudgetValue "{5EE71CA1677C234F}" {
+     }
+     SCR_EntityBudgetValue "{68E6A67BBF9E531A}" {
+      m_Value 300
+     }
+     SCR_EntityBudgetValue "{617A52EB00165295}" {
+      m_BudgetType RANK_LIEUTENANT
+      m_Value 4
+     }
+     SCR_EntityBudgetValue "{692AE7CC9EE56F99}" {
+      m_BudgetType WCS_COOLDOWN_DURATION
+      m_Value 100
+     }
+     SCR_EntityBudgetValue "{699556464635FF14}" {
+      m_Value 50
+     }
+    }
+    m_bEditorPlaceAsOneGroup 1
+    m_aCrewEntityBudgetCost {
+     SCR_EntityBudgetValue "{5A5EA70BD27BDDD6}" {
+     }
+    }
+    m_aPassengerEntityBudgetCost {
+     SCR_EntityBudgetValue "{5A5EA70BD2719A94}" {
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5916C58171230A92}" {
+   MaxCumulativeVolume 50000
+   MaxItemSize 40 40 40
+   MultiSlots {
+    MultiSlotConfiguration "{68FE4EAB039E01EA}" {
+     SlotTemplate InventoryStorageSlot ZU23_ammo {
+      Prefab "{8BD7CB61BD6AFD69}Prefabs/Weapons/Magazines/Box_23x152_ZU23_100rnd_2HEIT_1APIT.et"
+     }
+     NumSlots 6
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo Label_L {
+     Prefab "{1765F41CA99417F5}Prefabs/Vehicles/Shared/decal_vehicle_label_RU.et"
+    }
+    EntitySlotInfo Label_R {
+     Prefab "{1765F41CA99417F5}Prefabs/Vehicles/Shared/decal_vehicle_label_RU.et"
+    }
+    RegisteringComponentSlotInfo Cargo {
+     Prefab "{253EA4C6CE611ECB}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo_camo1_ZU23.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{68FE4EAB039E01D8}" {
+     ContextName "gunner"
+     Position PointInfo "{68FE4EAB039E01DA}" {
+      Offset -0.8083 1.0775 -2.7834
+     }
+    }
+    UserActionContext "{68FE4EAB039E01DC}" {
+     ContextName "commander"
+     Position PointInfo "{68FE4EAB039E01DD}" {
+      Offset -0.8083 1.0775 -2.7834
+     }
+    }
+   }
+   additionalActions {
+    WCS_RearmVehicleAtRepairStationAction "{68FE4EAB039E01C2}" {
+     ParentContextList {
+      "cargo_open"
+     }
+     UIInfo UIInfo "{68FE4EAB039E01C3}" {
+      Name "Rearm ZU-23-2"
+     }
+     Duration 5
+     "Sort Priority" 28
+     m_bLoopAction 0
+    }
+   }
+  }
+ }
+}

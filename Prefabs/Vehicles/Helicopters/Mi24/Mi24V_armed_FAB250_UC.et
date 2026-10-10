@@ -1,0 +1,191 @@
+Vehicle : "{9AA441DE6DAB6D94}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_armed_S8.et" {
+ ID "57DA6675519A417B"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68FF08F6878B5BEE}" {
+     SourceMaterial "ext1"
+     AssignedMaterial "{53BD6B820B46564F}Assets/Vehicles/Helicopters/Mi24V/Data/ext1_body_UC.emat"
+    }
+    MaterialAssignClass "{68FF08F6878B5BC1}" {
+     SourceMaterial "ext2"
+     AssignedMaterial "{280ACFADF4D97060}Assets/Vehicles/Helicopters/Mi24V/Data/ext2_body_UC.emat"
+    }
+    MaterialAssignClass "{68FF08F6878B5BC8}" {
+     SourceMaterial "ext3"
+     AssignedMaterial "{0167AC48A1AC6D85}Assets/Vehicles/Helicopters/Mi24V/Data/ext3_body_UC.emat"
+    }
+    MaterialAssignClass "{68FF08F6878B5BCE}" {
+     SourceMaterial "ext4"
+     AssignedMaterial "{DF6587F20BE73C3E}Assets/Vehicles/Helicopters/Mi24V/Data/ext4_body_UC.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#WCS-Helicopter_MI24V_Name - #WCS-Weapon_FAB250_Name"
+    m_Image "{A9088DA7ACA89627}UI/Textures/EditorPreviews/Vehicles/Helicopters/Mi24V/Mi24V_armed_FAB250.edds"
+    m_sFaction "US"
+    m_aAuthoredLabels + {
+     TRAIT_PASSENGERS_LARGE TRAIT_ARMED
+    }
+    m_aAutoLabels {
+     FACTION_US SIZE_L
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 12000
+     }
+     SCR_EntityBudgetValue "{629A82D4737471F8}" {
+      m_BudgetType RANK_COLONEL
+      m_Value 7
+     }
+     SCR_EntityBudgetValue "{629A82D79F5B3CE2}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 1700
+     }
+     SCR_EntityBudgetValue "{691CAB06FDD424AC}" {
+      m_BudgetType WCS_COOLDOWN_DURATION
+      m_Value 100
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "US"
+  }
+  VehicleProcAnimComponent "{76A3E713CE84D72F}" {
+   Parameters {
+    ProcAnimParams "{68FF08F6989D704F}" {
+     ResourceName "{F008D1CF4F8F6154}anims/Proc/BombSight.pap"
+     BoneNames {
+      "v_bombsight"
+     }
+    }
+   }
+  }
+  WCS_Armament_LoadoutComponent "{62A6BA2373E69A6E}" {
+   m_ArmamentGroups {
+    WCS_ArmamentWeaponGroup "{6291293707B485C3}" {
+     prefab "{1063832CCE78191D}Prefabs/Weapons/AircraftWeapons/BombPods/Pod_BDZ-UMK.et"
+     weaponsInfo {
+      WCS_ArmamentWeaponInfo "{62F33B9484BCAD2F}" {
+       Position PointInfo "{62F33B94814A7975}" {
+        Offset 0 -0.185 -0.1
+       }
+      }
+      WCS_ArmamentWeaponInfo "{62F33B94BA845D24}" {
+       Position PointInfo "{62F33B94BA845CEA}" {
+        Offset 0 -0.185 -0.0995
+       }
+      }
+      WCS_ArmamentWeaponInfo "{62F33B94B578B045}" {
+       Position PointInfo "{62F33B94B578B00C}" {
+        Offset 0 -0.185 -0.1
+       }
+      }
+      WCS_ArmamentWeaponInfo "{62F33B94B43F126E}" {
+       Position PointInfo "{62F33B94B43F1233}" {
+        Offset 0 -0.185 -0.1
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FF08F6989D705B}" {
+       Position PointInfo "{68FF08F6989D705C}" {
+        PivotID "pylon_L03"
+        Offset 0 -0.0854 -0.1025
+        Angles 1.8 0 0
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FF08F6989D705E}" {
+       Position PointInfo "{68FF08F6989D705F}" {
+        PivotID "pylon_R03"
+        Offset 0 -0.0854 -0.1025
+        Angles 1.8 0 0
+       }
+      }
+     }
+     fireModes {
+      WCS_Armament_WeaponSingleFireMode "{62F35A0340D61507}" {
+       m_iFireIntervalMS 200
+      }
+     }
+    }
+   }
+  }
+  WCS_Armament_VehicleCameraComponent "{654F038244C69B37}" {
+   m_Cameras {
+    WCS_VehicleCameraProps "{68FF08F6989D70A4}" {
+     m_Position PointInfo "{68FF08F6989D70A6}" {
+      PivotID "v_bombsight"
+     }
+     m_OverlayLayout "{34A5BCDEFD7B1EFC}UI/layouts/Sights/Optic_BombSight.layout"
+     m_sId "pilot_bombsight"
+    }
+   }
+  }
+  WCS_Armament_VehicleWeaponStationComponent "{685E632884D689B1}" {
+   Enabled 1
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{2FFB1076C8040CB4}Prefabs/Vehicles/Helicopters/Mi24/VehParts/Weapons/Mi24_Turret_base.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{68FF08F6989D70BA}" {
+     UIInfo SCR_ActionContextUIInfo "{68FF08F6989D70BC}" {
+      Name "Use bomb sight"
+     }
+     ContextName "bombsight"
+     Position PointInfo "{68FF08F6989D70BD}" {
+      Offset 0.01 2.2388 3.7429
+     }
+    }
+    UserActionContext "{68FF08F6989D70BF}" {
+     UIInfo SCR_ActionContextUIInfo "{68FF08F6989D7080}" {
+      Name "Use bomb sight"
+     }
+     ContextName "bombsight_elevation"
+     Position PointInfo "{68FF08F6989D7081}" {
+      Offset 0.0919 2.2264 3.7429
+     }
+     Radius 0.05
+    }
+   }
+   additionalActions {
+    WCS_Armament_VehicleCameraAction "{68FF08F6989D7085}" {
+     ParentContextList {
+      "bombsight"
+     }
+     m_sActionStateOn "Use Bombsight"
+     m_bInteriorOnly 1
+     m_sCameraId "pilot_bombsight"
+    }
+    SCR_AdjustSignalAction "{68FF08F6989D708D}" {
+     ParentContextList {
+      "bombsight_elevation"
+     }
+     UIInfo UIInfo "{68FF08F6989D708E}" {
+      Name "Adjust bombsight elevation"
+     }
+     Duration -1
+     PerformPerFrame 1
+     "Sort Priority" 2
+     "Signal name" "BombSightElevation"
+     "Max value" 60
+     m_fAdjustmentStep 1
+     m_bManualAdjustment 1
+     m_sActionStartSoundEvent "SOUND_HATCH_LEFT_ACTION_START"
+     m_sActionCanceledSoundEvent "SOUND_HATCH_LEFT_ACTION_CANCEL"
+     m_sMovementSoundEvent "SOUND_HATCH_LEFT_CHANGE_POSITION"
+     m_sMovementStopSoundEvent "SOUND_HATCH_LEFT_MOVEMENT_STOP"
+     m_bOnlyInVehicle 1
+     m_bPilotOnly 1
+    }
+   }
+  }
+ }
+}

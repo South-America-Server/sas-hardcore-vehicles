@@ -1,0 +1,138 @@
+Vehicle : "{72E301CF61366898}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_armaments.et" {
+ ID "5A7CEB06421662F8"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{64F48B50845FA4E0}" {
+     SourceMaterial "m_PRT_Windows_opened_FCD51D86A834D109"
+     AssignedMaterial "{FCD51D86A834D109}Assets/_SharedMaterials/VehicleParts/m_PRT_Windows_opened.emat"
+    }
+    MaterialAssignClass "{68FEB8CCC0C098D2}" {
+     SourceMaterial "Exterier_35715EB3956D22B9"
+     AssignedMaterial "{3AD699231E40AE3C}Assets/Vehicles/Helicopters/Mi8/Data/Mi8_Body_black.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#WCS-Vehicle_Mi8MT_Armed_Name - #WCS-Weapon_UPK23_Name/#WCS-Weapon_B8V20A_Name"
+    m_Image "{C7D72E798F54D0D3}UI/Textures/EditorPreviews/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_upk23.edds"
+    m_sFaction "USSR"
+    m_aAutoLabels +{
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 8500
+     }
+     SCR_EntityBudgetValue "{611E87CA7FF4ED82}" {
+      m_BudgetType RANK_CAPTAIN
+      m_Value 5
+     }
+     SCR_EntityBudgetValue "{691CAB03A41F83B3}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 1200
+     }
+     SCR_EntityBudgetValue "{691CAB03A50219F3}" {
+      m_BudgetType WCS_COOLDOWN_DURATION
+      m_Value 100
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  BaseVehicleNodeComponent "{57DA667544C3090A}" {
+   components {
+    BaseHUDComponent "{50F09A38B4352300}" {
+     InfoDisplays {
+      WCS_Armament_WeaponInfoVehicle "{62CEE7E7CACC9CBE}" {
+       m_bIsEnabled 1
+      }
+      SCR_WeaponInfo_MultiWeaponTurret "{645E8659E6F1BB74}" {
+       m_bIsEnabled 0
+      }
+     }
+    }
+   }
+  }
+  WCS_Armament_LoadoutComponent "{68FEB8CD062F824D}" {
+   m_ArmamentGroups {
+    WCS_ArmamentWeaponGroup "{68FEB8CD062F8246}" {
+     prefab "{77BFDD5F139D84D5}Prefabs/Weapons/AircraftWeapons/RocketPods/B8V20A/Pod_B8V20A.et"
+     weaponsInfo {
+      WCS_ArmamentWeaponInfo "{68FEB8CD062F8247}" {
+       Position PointInfo "{68FEB8CD062F8245}" {
+        Offset -3.4276 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CD062F825A}" {
+       Position PointInfo "{68FEB8CD062F825B}" {
+        Offset 3.4331 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CD062F8258}" {
+       Position PointInfo "{68FEB8CD062F8259}" {
+        Offset -2.8748 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CD062F825E}" {
+       Position PointInfo "{68FEB8CD062F825F}" {
+        Offset 2.8673 1.4565 -0.5535
+       }
+      }
+     }
+     fireModes {
+      WCS_Armament_WeaponSingleFireMode "{68FEB8CD062F825C}" {
+       m_iFireIntervalMS 200
+      }
+      WCS_Armament_WeaponSalvoFireMode "{68FEB8CD062F8252}" {
+      }
+      WCS_Armament_WeaponRippleFireMode "{68FEB8CD062F8250}" {
+      }
+      WCS_Armament_WeaponFullRippleFireMode "{68FEB8CD062F8255}" {
+      }
+     }
+     slotIndex 0
+    }
+    WCS_ArmamentSlotGroup "{68FEB8CD062F826A}" {
+     slotIndex 1
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo door_rear {
+     PivotID "Scene_Root"
+     Prefab "{8952883E000BE636}Prefabs/Vehicles/Helicopters/Mi8MT/VehParts/Mi8MT_rear_door.et"
+    }
+    RegisteringComponentSlotInfo Window_Glass_Cockpit_09 {
+     PivotID ""
+     Prefab "{5E31A42773C5CFF2}Prefabs/Vehicles/Helicopters/Mi8MT/VehParts/Glass/Mi-8_Glass_Cockpit_09.et"
+     RegisterActions 0
+     RegisterControllers 0
+     RegisterCompartments 0
+    }
+    RegisteringComponentSlotInfo Armaments {
+     Enabled 1
+    }
+   }
+  }
+  WeaponSlotComponent "{68FEB8CD062F8265}" {
+   WeaponType MachineGun
+   AttachType InventoryStorageSlot UPK23 {
+    Offset -2.2209 1.4656 -0.1797
+    DisablePhysicsInteraction 1
+   }
+   WeaponTemplate "{003036C854E0DC48}Prefabs/Weapons/AircraftWeapons/MachineGuns/UPK23/MachineGuns_UPK23_Dual.et"
+   WeaponSlotIndex 1
+  }
+  WeaponSlotComponent "{68FEB8CD062F8267}" {
+   AttachType InventoryStorageSlot Armament {
+    PivotID "Scene_Root"
+   }
+   WeaponTemplate "{52120E4BA120661B}Prefabs/Weapons/Core/Armament_Empty.et"
+   WeaponSlotIndex 0
+  }
+ }
+}

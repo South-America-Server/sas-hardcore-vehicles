@@ -1,0 +1,13 @@
+GenericEntity : "{D9C7B82F567BA500}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_combox.et" {
+ ID "0000000000000001"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{68FE32F5F6D4DDF0}" {
+     SourceMaterial "Ural_4320_Com_Exterior"
+     AssignedMaterial "{3A7380A2AA982E2D}Assets/RESKIN/Ural4320/Data/Ural_Back_RU.emat"
+    }
+   }
+  }
+ }
+}

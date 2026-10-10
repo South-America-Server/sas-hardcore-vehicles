@@ -1,0 +1,43 @@
+Vehicle : "{32E77EC32ED2B6D1}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_Arsenal.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68FE32F47DB8F05D}" {
+     SourceMaterial "Ural_Body"
+     AssignedMaterial "{74641A1DB0B893C8}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Body_RU.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_sFaction "USSR"
+    m_aAuthoredLabels +{
+    }
+    m_aAutoLabels {
+     FACTION_USSR SIZE_M VEHICLE_TRUCK
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EF07CE051E72289}" {
+      m_BudgetType RANK_PRIVATE
+      m_Value 1
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo Label_L {
+     Prefab "{4AEE7446D32E89C1}Prefabs/Vehicles/Shared/decal_vehicle_label_small_RU.et"
+    }
+    EntitySlotInfo Label_R {
+     Prefab "{4AEE7446D32E89C1}Prefabs/Vehicles/Shared/decal_vehicle_label_small_RU.et"
+    }
+   }
+  }
+ }
+ coords 91.77 1 1580.152
+}

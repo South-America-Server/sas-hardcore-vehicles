@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{5D3D3798A0234996}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_upk23_RU.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

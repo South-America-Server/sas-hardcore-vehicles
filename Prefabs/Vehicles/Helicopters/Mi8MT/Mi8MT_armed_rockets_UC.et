@@ -1,0 +1,116 @@
+Vehicle : "{72E301CF61366898}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_armaments.et" {
+ ID "5A7CEB06421662F8"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{64F48B50845FA4E0}" {
+     SourceMaterial "m_PRT_Windows_opened_FCD51D86A834D109"
+     AssignedMaterial "{FCD51D86A834D109}Assets/_SharedMaterials/VehicleParts/m_PRT_Windows_opened.emat"
+    }
+    MaterialAssignClass "{68FEB8CEBBEC4F0B}" {
+     SourceMaterial "Exterier_35715EB3956D22B9"
+     AssignedMaterial "{3FEFDD92B8B10764}Assets/RESKIN/Mi8/Data/Mi8_Body_UK.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#WCS-Vehicle_Mi8MT_Armed_Name - #WCS-Weapon_B8V20A_Name"
+    m_Image "{7914A7F3A56EBDA1}UI/Textures/EditorPreviews/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_rockets.edds"
+    m_sFaction "US"
+    m_aAutoLabels {
+     FACTION_US SIZE_L
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 8500
+     }
+     SCR_EntityBudgetValue "{611E87CA7FF4ED82}" {
+      m_BudgetType RANK_CAPTAIN
+      m_Value 5
+     }
+     SCR_EntityBudgetValue "{691B35927874B6E9}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 1200
+     }
+     SCR_EntityBudgetValue "{691B359246DC31F3}" {
+      m_BudgetType WCS_COOLDOWN_DURATION
+      m_Value 100
+     }
+    }
+   }
+  }
+  BaseVehicleNodeComponent "{57DA667544C3090A}" {
+   components {
+    BaseHUDComponent "{50F09A38B4352300}" {
+     InfoDisplays {
+      WCS_Armament_WeaponInfoVehicle "{62CEE7E7CACC9CBE}" {
+       m_bIsEnabled 1
+      }
+      SCR_WeaponInfo_MultiWeaponTurret "{645E8659E6F1BB74}" {
+       m_bIsEnabled 0
+      }
+     }
+    }
+   }
+  }
+  WCS_Armament_LoadoutComponent "{68FEB8CE287F68CC}" {
+   m_ArmamentGroups {
+    WCS_ArmamentWeaponGroup "{68FEB8CE287F68B2}" {
+     prefab "{77BFDD5F139D84D5}Prefabs/Weapons/AircraftWeapons/RocketPods/B8V20A/Pod_B8V20A.et"
+     weaponsInfo {
+      WCS_ArmamentWeaponInfo "{68FEB8CE287F68B4}" {
+       Position PointInfo "{68FEB8CE287F68B5}" {
+        Offset -3.4276 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CE287F68B7}" {
+       Position PointInfo "{68FEB8CE287F1AAF}" {
+        Offset 3.4331 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CE287F1AA1}" {
+       Position PointInfo "{68FEB8CE287F1AA2}" {
+        Offset -2.8748 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CE287FBC42}" {
+       Position PointInfo "{68FEB8CE287FBC44}" {
+        Offset 2.8673 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CE287E3074}" {
+       Position PointInfo "{68FEB8CE287E3075}" {
+        Offset -2.2173 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CE287E3076}" {
+       Position PointInfo "{68FEB8CE287E3077}" {
+        Offset 2.2173 1.4565 -0.5535
+       }
+      }
+     }
+     fireModes {
+      WCS_Armament_WeaponSingleFireMode "{68FEB8CE287E3068}" {
+       m_iFireIntervalMS 200
+      }
+      WCS_Armament_WeaponSalvoFireMode "{68FEB8CE287E30BD}" {
+      }
+      WCS_Armament_WeaponRippleFireMode "{68FEB8CE287E30BF}" {
+      }
+      WCS_Armament_WeaponFullRippleFireMode "{68FEB8CE287E30B0}" {
+      }
+     }
+    }
+   }
+  }
+  WeaponSlotComponent "{68FEB8CE287E30B3}" {
+   shouldHandleObstruction 0
+   AttachType InventoryStorageSlot Armament {
+    PivotID "Scene_Root"
+   }
+   WeaponTemplate "{52120E4BA120661B}Prefabs/Weapons/Core/Armament_Empty.et"
+   WeaponSlotIndex 0
+  }
+ }
+}

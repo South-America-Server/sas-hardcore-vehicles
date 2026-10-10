@@ -1,0 +1,71 @@
+GenericEntity : "{25895C54FE021EE6}Prefabs/Vehicles/Core/Vehicle_Canvas_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{407536B3D8A85E53}Assets/Vehicles/Wheeled/UAZ469/VehParts/UAZ469_roof_canvas.xob"
+   Materials {
+    MaterialAssignClass "{68F2E586BB1EFD36}" {
+     SourceMaterial "UAZ469_Details"
+     AssignedMaterial "{F0F8909CFCAC24C9}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Details_UC.emat"
+    }
+   }
+  }
+  VehicleLightPortalComponent "{68F2E58600E71944}" {
+   PortalInfoList {
+    AnimVehicleLightPortal "{68F2E58600E7194E}" {
+     ContextName "Door_L01"
+     PortalPositionInfo PointInfo "{68F2E58600E71931}" {
+      Offset -0.9625 1.25 0.26
+     }
+    }
+    AnimVehicleLightPortal "{68F2E58600E71933}" {
+     ContextName "Door_R01"
+     PortalPositionInfo PointInfo "{68F2E58600E71934}" {
+      Offset 0.9625 1.25 0.26
+     }
+     AnimDoorIndex 1
+    }
+    AnimVehicleLightPortal "{68F2E58600E71935}" {
+     ContextName "Door_L02"
+     PortalPositionInfo PointInfo "{68F2E58600E71936}" {
+      Offset -0.92 1.4 -0.45
+     }
+     AnimDoorIndex 2
+    }
+    AnimVehicleLightPortal "{68F2E58600E71937}" {
+     ContextName "Door_R02"
+     PortalPositionInfo PointInfo "{68F2E58600E71938}" {
+      Offset 0.92 1.4 -0.45
+     }
+     AnimDoorIndex 3
+    }
+    VehicleLightPortal "{68F2E58600E7193A}" {
+     ContextName "Window_F"
+     PortalPositionInfo PointInfo "{68F2E58600E76F0B}" {
+      Offset 0 1.7 0.65
+     }
+    }
+    VehicleLightPortal "{68F2E58600E76F0A}" {
+     ContextName "Window_Rear"
+     PortalPositionInfo PointInfo "{68F2E58600E76F0D}" {
+      Offset 0 1.7 -1.7
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{68F2E58600E76EC5}" {
+   Slots {
+    RegisteringComponentSlotInfo Window_rear {
+     Prefab "{BC9BCE79086726B6}Prefabs/Vehicles/Wheeled/UAZ469/dst/UAZ469_window_back.et"
+     RegisterDamage 1
+    }
+   }
+  }
+ }
+ {
+  GameEnvironmentProbeEntity : "{5B5408B8D1284397}Prefabs/Vehicles/Wheeled/UAZ469/Probes/UAZ469_Probe_roof_canvas.et" {
+   ID "68F2E58600E7195A"
+   coords 0 1.295 -0.474
+  }
+ }
+}

@@ -1,0 +1,319 @@
+Vehicle : "{A8C732BE755F8BD0}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_base.et" {
+ ID "57DA6675519A417B"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68FF08F72CB95EAC}" {
+     SourceMaterial "ext1"
+     AssignedMaterial "{53BD6B820B46564F}Assets/Vehicles/Helicopters/Mi24V/Data/ext1_body_UC.emat"
+    }
+    MaterialAssignClass "{68FF08F72CB95E9C}" {
+     SourceMaterial "ext2"
+     AssignedMaterial "{280ACFADF4D97060}Assets/Vehicles/Helicopters/Mi24V/Data/ext2_body_UC.emat"
+    }
+    MaterialAssignClass "{68FF08F72CB95E85}" {
+     SourceMaterial "ext3"
+     AssignedMaterial "{0167AC48A1AC6D85}Assets/Vehicles/Helicopters/Mi24V/Data/ext3_body_UC.emat"
+    }
+    MaterialAssignClass "{68FF08F72CB95E8A}" {
+     SourceMaterial "ext4"
+     AssignedMaterial "{DF6587F20BE73C3E}Assets/Vehicles/Helicopters/Mi24V/Data/ext4_body_UC.emat"
+    }
+   }
+  }
+  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{628F44AF4D9823B3}" {
+     OpenDoorAction SCR_OpenVehicleDoorUserAction "{628F44AF4D9823B4}" {
+      ParentContextList {
+      }
+     }
+     CloseDoorAction SCR_CloseVehicleDoorUserAction "{628F44AF4D9823A0}" {
+      ParentContextList {
+      }
+     }
+    }
+    CompartmentDoorInfo "{628F44AF4D982399}" {
+     OpenDoorAction SCR_OpenVehicleDoorUserAction "{628F44AF4D98239A}" {
+      ParentContextList {
+      }
+     }
+     CloseDoorAction SCR_CloseVehicleDoorUserAction "{628F44AF4D98239D}" {
+     }
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#WCS-Helicopter_MI24V_Supply_Name"
+    m_Image "{7193F91A10B8A1F7}UI/Textures/EditorPreviews/Vehicles/Helicopters/Mi24V/Mi24V_transport.edds"
+    m_sFaction "US"
+    m_aAuthoredLabels {
+     ENTITYTYPE_VEHICLE VEHICLE_HELICOPTER TRAIT_SUPPLYSTORAGE_LARGE
+    }
+    m_aAutoLabels {
+     FACTION_US SIZE_L
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 7000
+     }
+     SCR_EntityBudgetValue "{629A82D4737471F8}" {
+     }
+     SCR_EntityBudgetValue "{629A82D79F5B3CE2}" {
+      m_Value 0
+     }
+    }
+   }
+  }
+  SCR_ResourceComponent "{68FF08F747A1630F}" {
+   Enabled 1
+   m_aContainers {
+    SCR_ResourceContainer "{68FF08F747A162E8}" {
+     m_eResourceRights FACTION
+     m_eStorageType CARGO_VEHICLE
+     m_fResourceValueCurrent 0
+     m_fResourceValueMax 0
+     m_fResourceGain 0
+     m_fResourceGainTickrate 0
+     m_fResourceGainTimeout 0
+     m_fResourceDecay 0
+     m_fResourceDecayTickrate 0
+     m_fResourceDecayTimeout 0
+    }
+   }
+   m_aEncapsulators {
+    SCR_ResourceEncapsulator "{68FF08F747A162ED}" {
+     m_sDebugName "Encapsulator - Mi-24V"
+     m_eResourceRights ALL
+     m_ContainerQueue SCR_ResourceEncapsulatorContainerQueue "{68FF08F747A162D0}" {
+      m_StoragePolicies {
+       SCR_ResourceEncapsulatorStoragePolicyGeneric "{68FF08F747A162D1}" {
+        m_StorageQueue SCR_ResourceEncapsulatorContainerStorageQueue "{68FF08F747A162D3}" {
+        }
+       }
+      }
+     }
+     m_aActions {
+      SCR_ResourceEncapsulatorActionChangeDecay "{68FF08F747A162D5}" {
+       m_fResourceDecay 0
+       m_fResourceDecayTickrate 0
+       m_fResourceDecayTimeout 0
+      }
+      SCR_ResourceEncapsulatorActionChangeGain "{68FF08F747A162D6}" {
+       m_fResourceGain 0
+       m_fResourceGainTickrate 0
+       m_fResourceGainTimeout 0
+      }
+      SCR_ResourceEncapsulatorActionChangeOnEmptyBehavior "{68FF08F747A162D7}" {
+       m_eOnEmptyBehavior HIDE
+      }
+      SCR_ResourceEncapsulatorActionChangeResourceValue "{68FF08F747A162D9}" {
+       m_fResourceValueCurrent 0
+      }
+     }
+    }
+   }
+   m_aConsumers {
+    SCR_ResourceConsumer "{68FF08F747A162DB}" {
+     m_sDebugName "Consumer - Load Supplies"
+     m_eResourceRights ALL
+     m_eGeneratorIdentifier VEHICLE_LOAD
+     m_fResourceRange 25
+     m_fBuyMultiplier 0
+     m_fSellMultiplier 0
+     m_bIsIgnoringItself 1
+     m_ContainerQueue SCR_ResourceConsumerContainerQueue "{68FF08F747A162DD}" {
+      m_StoragePolicies {
+       SCR_ResourceConsumerStoragePolicy "{68FF08F747A162DE}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueueExtended "{68FF08F747A162B4}" {
+        }
+       }
+       SCR_ResourceConsumerStoragePolicy "{68FF08F747A162B5}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueueExtended "{68FF08F747A162B6}" {
+        }
+        m_eStorageType STORED
+       }
+      }
+     }
+    }
+    SCR_ResourceConsumer "{68FF08F747A162B7}" {
+     m_sDebugName "Consumer - Unload Supplies"
+     m_eResourceRights SELF
+     m_eGeneratorIdentifier VEHICLE_UNLOAD
+     m_fResourceRange 25
+     m_fBuyMultiplier 0
+     m_fSellMultiplier 0
+     m_ContainerQueue SCR_ResourceConsumerContainerQueue "{68FF08F747A162B9}" {
+      m_StoragePolicies {
+       SCR_ResourceConsumerStoragePolicyGeneric "{68FF08F747A162BA}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueue "{68FF08F747A162BC}" {
+        }
+       }
+      }
+     }
+    }
+   }
+   m_aGenerators {
+    SCR_ResourceGenerator "{68FF08F747A162BE}" {
+     m_sDebugName "Generator - Load"
+     m_eResourceRights SELF
+     m_eIdentifier VEHICLE_LOAD
+     m_fResourceMultiplier 1
+     m_fStorageRange 25
+     m_ContainerQueue SCR_ResourceGeneratorContainerQueue "{68FF08F747A162BF}" {
+      m_StoragePolicies {
+       SCR_ResourceGeneratorStoragePolicyGeneric "{68FF08F747A162A3}" {
+        m_StorageQueue SCR_ResourceGeneratorContainerStorageQueue "{68FF08F747A162A4}" {
+        }
+       }
+      }
+     }
+     m_aActions {
+      SCR_ResourceGeneratorActionStore "{68FF08F747A162AB}" {
+      }
+     }
+    }
+    SCR_ResourceGenerator "{68FF08F747A162AC}" {
+     m_sDebugName "Generator - Unload Supplies"
+     m_eResourceRights ALL
+     m_eIdentifier VEHICLE_UNLOAD
+     m_fResourceMultiplier 1
+     m_fStorageRange 25
+     m_bIsIgnoringItself 1
+     m_ContainerQueue SCR_ResourceGeneratorContainerQueue "{68FF08F747A162AD}" {
+      m_StoragePolicies {
+       SCR_ResourceGeneratorStoragePolicy "{68FF08F747A162AE}" {
+        m_StorageQueue SCR_ResourceGeneratorContainerStorageQueueExtended "{68FF08F747A16290}" {
+        }
+        m_eStorageType STORED
+       }
+      }
+     }
+     m_aActions {
+      SCR_ResourceGeneratorActionStore "{68FF08F747A16291}" {
+      }
+     }
+    }
+   }
+   m_bEnableDebugVisualization 0
+   m_eDebugVisualizationFlags 15
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "US"
+  }
+  WCS_Armament_VehicleWeaponStationComponent "{685E632884D689B1}" {
+   Enabled 0
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo SeatsRear {
+     Enabled 0
+    }
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{E89EB1D820061383}Prefabs/Vehicles/Helicopters/Mi24/VehParts/Weapons/Mi24P_Turret_base.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_01 {
+     Offset 0 1.2811 0.5653
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_02 {
+     Offset 0 1.6076 0.5653
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_03 {
+     Offset 0 1.9188 0.5653
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_04 {
+     Offset 0 1.6076 1.0892
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_05 {
+     Offset 0 1.2811 1.0892
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_06 {
+     Offset 0.0054 1.5412 1.3613
+     Angles -90 0 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_09 {
+     Offset 0 1.9118 0.0531
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_11 {
+     Offset 0 1.5965 0.0531
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_10 {
+     Offset 0 1.2811 0.0531
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_08 {
+     Offset 0.0054 2.0522 1.3613
+     Angles -90 0 0
+     MergePhysics 1
+    }
+    RegisteringComponentSlotInfo SupplyStorage_07 {
+     Offset 0 1.9188 1.0892
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_12 {
+     Offset -0.6144 1.5565 0.0531
+     Angles 90 90 -180
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   additionalActions {
+    SCR_ResourceContainerVehicleLoadAction "{68FF08F747A16287}" {
+     ParentContextList {
+      "door_back_l01" "door_back_l01_int" "door_back_r01" "door_back_r01_int"
+     }
+     UIInfo SCR_ActionUIInfo "{68FF08F747A16288}" {
+      Name "#AR-Supplies_Vehicle_Load"
+      Description "#AR-Supplies_Vehicle_Load_Long"
+      m_sIconName "veh_trunk"
+     }
+     Duration -1
+     CanAggregate 0
+     PerformPerFrame 1
+     "Sort Priority" 21
+     m_bLowerWeaponOnUse 1
+     m_eShownInVehicleState NOT_IN_VEHICLE
+     m_fTransferAmount 100
+    }
+    SCR_ResourceContainerVehicleUnloadAction "{68FF08F747A1628A}" {
+     ParentContextList {
+      "door_back_l01" "door_back_l01_int" "door_back_r01" "door_back_r01_int"
+     }
+     UIInfo SCR_ActionUIInfo "{68FF08F747A1628B}" {
+      Name "#AR-Supplies_Vehicle_Unload"
+      Description "#AR-Supplies_Vehicle_Unload_Long"
+      m_sIconName "veh_trunk"
+     }
+     Duration -1
+     CanAggregate 0
+     PerformPerFrame 1
+     "Sort Priority" 22
+     m_bLowerWeaponOnUse 1
+     m_eShownInVehicleState NOT_IN_VEHICLE
+     m_fTransferAmount 100
+    }
+   }
+  }
+ }
+}

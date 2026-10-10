@@ -1,0 +1,334 @@
+AudioClass {
+ signals {
+  SignalClass "5133" {
+   id 5133
+   name "Signal 14"
+   tl -539.972 -142.586
+   res "{D4A1555B02A77EDA}Sounds/_SharedData/Signals/Vehicles/Vehicles_Occlusion_OutsideVehicleSource.sig"
+   inputsport {
+    45 55 103 111
+   }
+   outputsport {
+    74
+   }
+   inputvalues {
+    0 0 1000 0
+   }
+   inputvaluesmin {
+    0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 10000 1
+   }
+  }
+  SignalClass "9229" {
+   id 9229
+   name "Signal 23"
+   tl -306.056 123.739
+   res "{6A92ECFA84F929B3}Sounds/_SharedData/Signals/OneSignal/HornState.sig"
+   inputsport {
+    1
+   }
+   outputsport {
+    2
+   }
+   inputvalues {
+    1
+   }
+   inputvaluesmin {
+    0
+   }
+   inputvaluesmax {
+    1
+   }
+  }
+  SignalClass "11277" {
+   id 11277
+   name "Signal Reverb"
+   tl -88.278 -361.023
+   res "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
+   inputsport {
+    1 35 112
+   }
+   outputsport {
+    39 105 107 106 110
+   }
+   inputvalues {
+    40 0 16000
+   }
+   inputvaluesmin {
+    0 0 0
+   }
+   inputvaluesmax {
+    100 1 16000
+   }
+  }
+ }
+ sounds {
+  SoundClass "10249" {
+   id 10249
+   name "SOUND_VEHICLE_HORN_LP"
+   version 5
+   tl -305.528 197.906
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "9229:2" {
+       id 9229
+       port 2
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "6162:65" {
+       id 6162
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   delayTime 200
+   transformation Bone
+   boneName "v_axle_01"
+  }
+ }
+ mixers {
+  MixerClass "8203" {
+   id 8203
+   name "OutputState"
+   version 4
+   tl -84.96 4.815
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass "con:17415" {
+     id 17415
+     links {
+      ConnectionClass "10249:65" {
+       id 10249
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:152583" {
+     id 152583
+     links {
+      ConnectionClass "4125:65" {
+       id 4125
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:197639" {
+     id 197639
+     links {
+      ConnectionClass "1053:65" {
+       id 1053
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    4210752 0
+   }
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb_OBSOLETE" "VON_Reverb_Small" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin" "VON_Reverb_Medium" "VON_Reverb_Large"
+   }
+  }
+ }
+ shaders {
+  ShaderClass "6162" {
+   id 6162
+   name "Shader 1"
+   version 5
+   tl -536.222 197.977
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "3100:65" {
+       id 3100
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "7187:65" {
+       id 7187
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "12309:65" {
+       id 12309
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "2052:65" {
+       id 2052
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   ITD 0
+  }
+ }
+ amplitudes {
+  AmplitudeClass "7187" : "{BA1F5E72DA797274}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-30LUFS_to_-25LUFS.conf" {
+   id 7187
+   version 5
+   tl -539.972 -217.868
+   parent "{BA1F5E72DA797274}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-30LUFS_to_-25LUFS.conf"
+  }
+ }
+ frequency {
+  FrequencyClass "12309" : "{0005FE42A6D80399}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_DynamicUpdate.conf" {
+   id 12309
+   version 5
+   tl -539.111 47.641
+   parent "{0005FE42A6D80399}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_DynamicUpdate.conf"
+   ins {
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "5133:74" {
+       id 5133
+       port 74
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   pu {
+    16 0
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass "2052" {
+   id 2052
+   name "Horn"
+   version 7
+   tl -775.064 200.406
+   Volume 5
+   "Loop count" 255
+   "Loop begin" 735232
+   "Loop length" 735232
+   "Infinite loop" 1
+   "Terminate Loop" 0
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{1C918AF06B9BA9F9}Assets/Sounds/CIE_TRUCK/CIE_TRUCK.wav"
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass "3100" {
+   id 3100
+   name "Spatiality"
+   version 5
+   tl -539.972 -293.15
+   spatialFactor 1
+  }
+ }
+ auxOuts {
+  AuxOutClass "1053" {
+   id 1053
+   name "AuxOut Reverb EXT"
+   version 5
+   tl -87.193 -116.921
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "10249:5" {
+       id 10249
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "11277:105" {
+       id 11277
+       port 105
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+   pu {
+    2 0
+   }
+   OSPort 197639
+  }
+  AuxOutClass "4125" {
+   id 4125
+   name "AuxOut Reverb INT"
+   version 5
+   tl -86.962 -240.94
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "10249:5" {
+       id 10249
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "11277:34" {
+       id 11277
+       port 34
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "11277:39" {
+       id 11277
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   pu {
+    6 0
+   }
+   OSPort 152583
+  }
+ }
+ version 2
+}

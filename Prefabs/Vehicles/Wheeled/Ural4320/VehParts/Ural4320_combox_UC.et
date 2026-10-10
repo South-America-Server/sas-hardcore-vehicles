@@ -1,0 +1,99 @@
+GenericEntity : "{D9C7B82F567BA500}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_combox.et" {
+ ID "5206D4E7CE97EC05"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{68F7268552A2E29E}" {
+     SourceMaterial "Ural_4320_Com_Exterior"
+     AssignedMaterial "{6940CFFD342BFA70}Assets/RESKIN/Ural4320/Data/Ural_Back_UC.emat"
+    }
+   }
+  }
+  SCR_CampaignBuildingProviderComponent "{68F72683C6BFE157}" {
+   m_sProviderDisplayName "#AR-Vehicle_Ural4320_Comms_Name"
+   m_iRank SERGEANT
+   m_aBudgetsToEvaluate {
+    SCR_CampaignBuildingBudgetToEvaluateData "{68F72683C6BFE142}" {
+     m_eBudget CAMPAIGN
+    }
+    SCR_CampaignBuildingRankBudgetToEvaluateData "{68F72683C6BFE145}" {
+     m_eBudget RANK_CORPORAL
+    }
+    SCR_CampaignBuildingRankBudgetToEvaluateData "{68F72683C6BFE146}" {
+     m_eBudget RANK_SERGEANT
+    }
+   }
+   m_aAvailableTraits {
+    TRAIT_BASE TRAIT_FORTIFICATION THEME_MILITARY TRAIT_SERVICE
+   }
+  }
+  SCR_ResourceComponent "{5D83561F25268587}" {
+   m_aContainers {
+    SCR_ResourceContainer "{5D83561F24437BF2}" {
+     m_fResourceValueMax 1500
+    }
+   }
+   m_aConsumers {
+    SCR_ResourceConsumerServicePoint "{68F72683C6BFE14B}" {
+     m_sDebugName "Consumer - Service Vehicle"
+     m_eResourceRights ALL
+     m_eGeneratorIdentifier DEFAULT
+     m_fResourceRange 1
+     m_fSellMultiplier 0
+     m_ContainerQueue SCR_ResourceConsumerContainerQueue "{68F72683C6BFE14D}" {
+      m_StoragePolicies {
+       SCR_ResourceConsumerStoragePolicy "{68F72683C6BFE14F}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueueExtended "{68F72683C6BFE131}" {
+        }
+        m_eStorageType CARGO_VEHICLE
+       }
+      }
+     }
+    }
+   }
+   m_aGenerators {
+    SCR_ResourceGeneratorServicePoint "{68F72683C6BFE134}" {
+     m_sDebugName "Generator - Service Vehicle"
+     m_eResourceRights ALL
+     m_fResourceMultiplier 0.333
+     m_fStorageRange 5
+     m_ContainerQueue SCR_ResourceGeneratorContainerQueue "{68F72683C6BFE136}" {
+      m_StoragePolicies {
+       SCR_ResourceGeneratorStoragePolicy "{68F72683C6BFE137}" {
+        m_StorageQueue SCR_ResourceGeneratorContainerStorageQueueExtended "{68F72683C6BFE138}" {
+        }
+        m_eStorageType CARGO_VEHICLE
+       }
+       SCR_ResourceGeneratorStoragePolicy "{68F72683C6BFE139}" {
+        m_StorageQueue SCR_ResourceGeneratorContainerStorageQueueExtended "{68F72683C6BFE120}" {
+        }
+       }
+      }
+     }
+     m_aActions {
+      SCR_ResourceGeneratorActionStore "{68F72683C6BFE122}" {
+      }
+      SCR_ResourceGeneratorActionDropContainers "{68F72683C6BFE124}" {
+       m_fSpawnRadius 10
+      }
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{5DE2DEF025C6CAA0}" {
+   additionalActions {
+    SCR_CampaignBuildingStartUserAction "{68F72683C6BFE128}" {
+     ParentContextList {
+      "trunk"
+     }
+     UIInfo SCR_ActionUIInfo "{68F72683C6BFE12A}" {
+      Name "#AR-Campaign_Action_ShowBuildPreview"
+      m_sIconName "use"
+     }
+     Duration 0.5
+     CanAggregate 1
+    }
+   }
+  }
+ }
+}

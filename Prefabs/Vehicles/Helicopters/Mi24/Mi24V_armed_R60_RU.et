@@ -1,0 +1,123 @@
+Vehicle : "{9AA441DE6DAB6D94}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_armed_S8.et" {
+ ID "57DA6675519A417B"
+ components {
+  SCR_HelicopterSoundComponent "{5A7CE769E7A9C43E}" {
+   Filenames + {
+    "{B12946540CB7BED0}Sounds/Weapons/Launchers/IR_Module/Weapons_Launchers_IR_Module.acp"
+   }
+  }
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68FF3E114A89D47F}" {
+     SourceMaterial "ext1"
+     AssignedMaterial "{25665627F5F079F8}Assets/Vehicles/Helicopters/Mi24V/Data/ext1_body_RU.emat"
+    }
+    MaterialAssignClass "{68FF3E114A89D450}" {
+     SourceMaterial "ext2"
+     AssignedMaterial "{A10A54ED98F5F0FC}Assets/Vehicles/Helicopters/Mi24V/Data/ext2_body_RU.emat"
+    }
+    MaterialAssignClass "{68FF3E114A89D456}" {
+     SourceMaterial "ext3"
+     AssignedMaterial "{1C81F5F2DB509A71}Assets/Vehicles/Helicopters/Mi24V/Data/ext3_body_RU.emat"
+    }
+    MaterialAssignClass "{68FF3E114A89D45C}" {
+     SourceMaterial "ext4"
+     AssignedMaterial "{EB22B092EB14D467}Assets/Vehicles/Helicopters/Mi24V/Data/ext4_body_RU.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#WCS-Helicopter_MI24V_Name - #WCS-Weapon_R60_Name/#WCS-Weapon_B8V20A_Name"
+    m_Image "{1E9C33158DEE8780}UI/Textures/EditorPreviews/Vehicles/Helicopters/Mi24V/Mi24V_armed_R60.edds"
+    m_sFaction "USSR"
+    m_aAuthoredLabels + {
+     TRAIT_PASSENGERS_LARGE TRAIT_ARMED
+    }
+    m_aAutoLabels +{
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 15000
+     }
+     SCR_EntityBudgetValue "{629A82D4737471F8}" {
+      m_BudgetType RANK_COLONEL
+      m_Value 7
+     }
+     SCR_EntityBudgetValue "{629A82D79F5B3CE2}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 1700
+     }
+     SCR_EntityBudgetValue "{691CAB06728A7EF9}" {
+      m_BudgetType WCS_COOLDOWN_DURATION
+      m_Value 100
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  WCS_Armament_LoadoutComponent "{62A6BA2373E69A6E}" {
+   m_ArmamentGroups {
+    WCS_ArmamentWeaponGroup "{6291293707B485C3}" {
+     weaponsInfo {
+      WCS_ArmamentWeaponInfo "{62F33B9484BCAD2F}" {
+      }
+      WCS_ArmamentWeaponInfo "{62F33B94BA845D24}" {
+       isEnabled 0
+      }
+      WCS_ArmamentWeaponInfo "{62F33B94B578B045}" {
+      }
+      WCS_ArmamentWeaponInfo "{62F33B94B43F126E}" {
+       isEnabled 0
+      }
+     }
+    }
+    WCS_ArmamentWeaponGroup "{68FF08E4920D8FA7}" {
+     prefab "{8C4557A4F0B459B9}Prefabs/Weapons/AircraftWeapons/MissilePods/R60/Pod_R60X1_mi24.et"
+     weaponsInfo {
+      WCS_ArmamentWeaponInfo "{68FF08E4920D8F9F}" {
+       Position PointInfo "{68FF08E4920D8F9B}" {
+        PivotID "pylon_L02"
+        Offset 0 0.3699 0
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FF08E4920D8F9A}" {
+       Position PointInfo "{68FF08E4920D8F99}" {
+        PivotID "pylon_R02"
+        Offset 0 0.3699 0
+       }
+      }
+     }
+     fireModes {
+      WCS_Armament_WeaponSingleFireMode "{68FF08E4920D8F98}" {
+      }
+     }
+     slotIndex 1
+    }
+   }
+  }
+  WCS_Armament_VehicleWeaponStationComponent "{685E632884D689B1}" {
+   Enabled 1
+   components {
+    WCS_Armament_InfraredMissileWeaponStationModuleComponent "{68FF08E4920D8F94}" {
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+    }
+   }
+  }
+  WeaponSlotComponent "{68FF08E4920D8F8C}" {
+   shouldHandleObstruction 0
+   AttachType InventoryStorageSlot "{687B072AD00E2990}" {
+    PivotID "Scene_Root"
+   }
+   WeaponTemplate "{52120E4BA120661B}Prefabs/Weapons/Core/Armament_Empty.et"
+   WeaponSlotIndex 1
+  }
+ }
+}

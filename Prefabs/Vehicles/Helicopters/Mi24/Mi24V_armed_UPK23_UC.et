@@ -1,0 +1,80 @@
+Vehicle : "{A8C732BE755F8BD0}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_base.et" {
+ ID "57DA6675519A417B"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68FF08F6C8C8E60D}" {
+     SourceMaterial "ext1"
+     AssignedMaterial "{53BD6B820B46564F}Assets/Vehicles/Helicopters/Mi24V/Data/ext1_body_UC.emat"
+    }
+    MaterialAssignClass "{68FF08F6C8C8E660}" {
+     SourceMaterial "ext2"
+     AssignedMaterial "{280ACFADF4D97060}Assets/Vehicles/Helicopters/Mi24V/Data/ext2_body_UC.emat"
+    }
+    MaterialAssignClass "{68FF08F6C8C8E669}" {
+     SourceMaterial "ext3"
+     AssignedMaterial "{0167AC48A1AC6D85}Assets/Vehicles/Helicopters/Mi24V/Data/ext3_body_UC.emat"
+    }
+    MaterialAssignClass "{68FF08F6C8C8E66E}" {
+     SourceMaterial "ext4"
+     AssignedMaterial "{DF6587F20BE73C3E}Assets/Vehicles/Helicopters/Mi24V/Data/ext4_body_UC.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#WCS-Helicopter_MI24V_Name - #WCS-Weapon_UPK23_Name"
+    m_Image "{30CB1A39ABA4B1A9}UI/Textures/EditorPreviews/Vehicles/Helicopters/Mi24V/Mi24V_armed_UPK23.edds"
+    m_sFaction "US"
+    m_aAuthoredLabels {
+     ENTITYTYPE_VEHICLE VEHICLE_HELICOPTER TRAIT_PASSENGERS_LARGE TRAIT_ARMED
+    }
+    m_aAutoLabels {
+     FACTION_US SIZE_L
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{629A82D79F5B3CE2}" {
+      m_BudgetType WCS_XP_COST
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "US"
+  }
+  WCS_Armament_LoadoutComponent "{68FF08F6EE58F58A}" {
+  }
+  WCS_Armament_VehicleWeaponStationComponent "{685E632884D689B1}" {
+   Enabled 1
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     MergePhysics 1
+     Prefab "{8FCC897602A4BEB1}Prefabs/Vehicles/Helicopters/Mi24/VehParts/Weapons/Mi24_Turret_9m114.et"
+     DisablePhysicsInteraction 1
+     RegisterWeapons 0
+    }
+   }
+  }
+  WeaponSlotComponent "{68FF08F6EE5882B6}" {
+   Enabled 1
+   SignalsSourceAccess SignalsSourceAccessClass "{68FF08F6EE5882B9}" {
+   }
+   WeaponType MachineGun
+   AttachType InventoryStorageSlot "{62A6AD652FC9587F}" {
+    Offset 0 0 0
+    Angles 0 0 0
+    DisablePhysicsInteraction 1
+   }
+   WeaponTemplate "{025BAEAA5CC4DEA3}Prefabs/Weapons/AircraftWeapons/MachineGuns/MachineGuns_UPK23_Dual_Mi24V.et"
+  }
+  WeaponSlotComponent "{68FF08F6EE5882BD}" {
+   AttachType InventoryStorageSlot "{65CD51B0A7C25EC6}" {
+    PivotID "Scene_Root"
+   }
+   WeaponTemplate "{52120E4BA120661B}Prefabs/Weapons/Core/Armament_Empty.et"
+   WeaponSlotIndex 1
+  }
+ }
+}

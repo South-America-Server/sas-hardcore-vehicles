@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{1107ED71D5CA3047}Prefabs/Vehicles/Wheeled/K17/APC_K17_Berezok_camo1_RU.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

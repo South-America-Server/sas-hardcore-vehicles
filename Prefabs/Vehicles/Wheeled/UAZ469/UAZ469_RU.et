@@ -1,0 +1,59 @@
+Vehicle : "{259EE7B78C51B624}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469.et" {
+ ID "44EC665ABD2FF04B"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68F75A1CE55BC848}" {
+     SourceMaterial "UAZ469_Body"
+     AssignedMaterial "{AD3DF727009CACB4}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body_RU.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_sFaction "USSR"
+    m_aAutoLabels {
+     FACTION_USSR SIZE_M VEHICLE_CAR
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5AD4F813E67ECB5D}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5AD4F813E67ECB53}" {
+     SlotTemplate InventoryStorageSlot Bandages {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{68F75A1CF69AF6E0}" {
+     SlotTemplate InventoryStorageSlot Jerrycan {
+      Enabled 1
+     }
+    }
+    MultiSlotConfiguration "{68F75A1CF69AF6FA}" {
+     SlotTemplate InventoryStorageSlot Jerrycan {
+      Enabled 1
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Door_L01 {
+     Prefab "{2F5C91A35C1D154D}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/UAZ469_door_L01_RU.et"
+    }
+    RegisteringComponentSlotInfo Door_R01 {
+     Prefab "{43923B72C84B7429}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/UAZ469_door_R01_RU.et"
+    }
+    RegisteringComponentSlotInfo Door_L02 {
+     Prefab "{25F9C1EEEA0DE6CA}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/UAZ469_door_L02_RU.et"
+    }
+    RegisteringComponentSlotInfo Door_R02 {
+     Prefab "{49376B3F7E5B87AE}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/UAZ469_door_R02_RU.et"
+    }
+   }
+  }
+ }
+}

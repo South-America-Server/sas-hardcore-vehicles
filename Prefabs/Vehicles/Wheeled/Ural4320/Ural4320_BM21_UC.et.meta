@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{BBE29CF5F357ED51}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_BM21_UC.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

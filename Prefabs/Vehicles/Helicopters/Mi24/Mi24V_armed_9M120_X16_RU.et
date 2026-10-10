@@ -1,0 +1,74 @@
+Vehicle : "{9AA441DE6DAB6D94}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_armed_S8.et" {
+ ID "57DA6675519A417B"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68FF3E11F470D7DF}" {
+     SourceMaterial "ext1"
+     AssignedMaterial "{25665627F5F079F8}Assets/Vehicles/Helicopters/Mi24V/Data/ext1_body_RU.emat"
+    }
+    MaterialAssignClass "{68FF3E11F470D7B0}" {
+     SourceMaterial "ext2"
+     AssignedMaterial "{A10A54ED98F5F0FC}Assets/Vehicles/Helicopters/Mi24V/Data/ext2_body_RU.emat"
+    }
+    MaterialAssignClass "{68FF3E11F470D7B7}" {
+     SourceMaterial "ext3"
+     AssignedMaterial "{1C81F5F2DB509A71}Assets/Vehicles/Helicopters/Mi24V/Data/ext3_body_RU.emat"
+    }
+    MaterialAssignClass "{68FF3E11F470D7BF}" {
+     SourceMaterial "ext4"
+     AssignedMaterial "{EB22B092EB14D467}Assets/Vehicles/Helicopters/Mi24V/Data/ext4_body_RU.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#WCS-Helicopter_MI24V_Name - #WCS-Weapon_B8V20A_Name/#WCS-Weapon_9M120_Name"
+    m_Image "{10810F5154B26A21}UI/Textures/EditorPreviews/Vehicles/Helicopters/Mi24V/Mi24V_armed_9M120X16.edds"
+    m_sFaction "USSR"
+    m_aAuthoredLabels + {
+     TRAIT_PASSENGERS_LARGE TRAIT_ARMED
+    }
+    m_aAutoLabels +{
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 12000
+     }
+     SCR_EntityBudgetValue "{629A82D4737471F8}" {
+      m_BudgetType RANK_COLONEL
+      m_Value 7
+     }
+     SCR_EntityBudgetValue "{629A82D79F5B3CE2}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 1700
+     }
+     SCR_EntityBudgetValue "{691CAB07553E2A7C}" {
+      m_BudgetType WCS_COOLDOWN_DURATION
+      m_Value 100
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  WCS_Armament_LoadoutComponent "{62A6BA2373E69A6E}" {
+   m_ArmamentGroups {
+    WCS_ArmamentWeaponGroup "{6291293707B485C3}" {
+     prefab "{77BFDD5F139D84D5}Prefabs/Weapons/AircraftWeapons/RocketPods/B8V20A/Pod_B8V20A.et"
+    }
+   }
+  }
+  WCS_Armament_VehicleWeaponStationComponent "{685E632884D689B1}" {
+   Enabled 1
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{FBC085A0217D58AF}Prefabs/Vehicles/Helicopters/Mi24/VehParts/Weapons/Mi24_Turret_9m120_X16.et"
+    }
+   }
+  }
+ }
+}

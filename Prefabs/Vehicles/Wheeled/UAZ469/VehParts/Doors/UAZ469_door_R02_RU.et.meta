@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{49376B3F7E5B87AE}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/UAZ469_door_R02_RU.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

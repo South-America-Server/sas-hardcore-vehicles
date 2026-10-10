@@ -1,0 +1,29 @@
+Vehicle : "{3696BFB0D5D19417}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M134.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_sFaction "US"
+    m_aAutoLabels {
+     FACTION_US SIZE_M VEHICLE_CAR
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 1000
+     }
+     SCR_EntityBudgetValue "{5EF07CF263360EC1}" {
+      m_BudgetType RANK_SERGEANT
+      m_Value 4
+     }
+     SCR_EntityBudgetValue "{68F2FCB2118ECB2F}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 100
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "US"
+  }
+ }
+}

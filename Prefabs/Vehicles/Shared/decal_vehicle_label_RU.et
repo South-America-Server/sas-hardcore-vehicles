@@ -1,0 +1,17 @@
+GenericEntity : "{1C539C904D39A895}Prefabs/Vehicles/Shared/decal_vehicle_base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{68F75A0A36D90FB6}" {
+     SourceMaterial "decal_plane"
+     AssignedMaterial "{6479B2C6DA929EBC}Assets/Vehicles/SharedMaterials/decals/numbers/Data/labels_RU.emat"
+    }
+   }
+  }
+  RHS_MaterialController "{5E35420CA7B998B2}" {
+   m_iNumberOfTextures 13
+   m_sGroupName "LABELS"
+  }
+ }
+}

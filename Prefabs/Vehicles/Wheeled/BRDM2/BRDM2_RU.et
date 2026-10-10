@@ -1,0 +1,33 @@
+Vehicle : "{254289B9C09904AB}Prefabs/Vehicles/Wheeled/BRDM2/BRDM2.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{69213C53E729A63B}" {
+     SourceMaterial "BRDM2_body_exterior_1"
+     AssignedMaterial "{ED9C7F8EBF40F525}Assets/Vehicles/Wheeled/BRDM2/Data/BRDM2_body_exterior_1_AFRF_RU.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_sFaction "USSR"
+    m_aAutoLabels +{
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 1000
+     }
+     SCR_EntityBudgetValue "{62ACE79B7FDC31CE}" {
+      m_BudgetType RANK_SERGEANT
+      m_Value 3
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+ }
+ coords 70.581 1 1572.544
+}

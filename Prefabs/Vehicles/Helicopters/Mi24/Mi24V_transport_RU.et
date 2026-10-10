@@ -1,0 +1,60 @@
+Vehicle : "{A8C732BE755F8BD0}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_base.et" {
+ ID "57DA6675519A417B"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68FF08E28F607317}" {
+     SourceMaterial "ext1"
+     AssignedMaterial "{25665627F5F079F8}Assets/Vehicles/Helicopters/Mi24V/Data/ext1_body_RU.emat"
+    }
+    MaterialAssignClass "{68FF08E28F607307}" {
+     SourceMaterial "ext2"
+     AssignedMaterial "{A10A54ED98F5F0FC}Assets/Vehicles/Helicopters/Mi24V/Data/ext2_body_RU.emat"
+    }
+    MaterialAssignClass "{68FF08E28F6072F8}" {
+     SourceMaterial "ext3"
+     AssignedMaterial "{1C81F5F2DB509A71}Assets/Vehicles/Helicopters/Mi24V/Data/ext3_body_RU.emat"
+    }
+    MaterialAssignClass "{68FF08E28F6072FD}" {
+     SourceMaterial "ext4"
+     AssignedMaterial "{EB22B092EB14D467}Assets/Vehicles/Helicopters/Mi24V/Data/ext4_body_RU.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#WCS-Helicopter_MI24V_Transport_Name"
+    m_Image "{7193F91A10B8A1F7}UI/Textures/EditorPreviews/Vehicles/Helicopters/Mi24V/Mi24V_transport.edds"
+    m_sFaction "USSR"
+    m_aAuthoredLabels {
+     ENTITYTYPE_VEHICLE VEHICLE_HELICOPTER TRAIT_PASSENGERS_LARGE
+    }
+    m_aAutoLabels +{
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 7000
+     }
+     SCR_EntityBudgetValue "{629A82D4737471F8}" {
+     }
+     SCR_EntityBudgetValue "{629A82D79F5B3CE2}" {
+      m_Value 0
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  WCS_Armament_VehicleWeaponStationComponent "{685E632884D689B1}" {
+   Enabled 0
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{E89EB1D820061383}Prefabs/Vehicles/Helicopters/Mi24/VehParts/Weapons/Mi24P_Turret_base.et"
+    }
+   }
+  }
+ }
+}

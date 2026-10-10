@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{68007C9E29C7E7E6}Prefabs/Vehicles/Wheeled/CIE_Truck/CIE_Truck_Police.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,191 @@
+Tank : "{E87F0D0B1C88BFD7}Prefabs/Vehicles/Tracked/T72B_RU.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "T-72B3 "
+    m_Image "{6C4D5AAD2D8CEE90}UI/t72b3.edds"
+    m_sFaction "USSR"
+    m_aAutoLabels {
+     FACTION_USSR SIZE_L CAMO_RHS_Olive
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 13000
+     }
+     SCR_EntityBudgetValue "{5EE71CA1677C234F}" {
+      m_BudgetType RANK_GENERAL
+      m_Value 8
+     }
+     SCR_EntityBudgetValue "{68FF38E28E936314}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 1100
+     }
+     SCR_EntityBudgetValue "{68FF38E289506309}" {
+      m_BudgetType WCS_COOLDOWN_DURATION
+      m_Value 100
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Front_Kontakt_01 {
+     Offset 0 0 0
+     Prefab "{4FF4917976569AA3}Prefabs/Vehicles/Tracked/VehParts/MOD3/ArmorFront_01.et"
+    }
+    RegisteringComponentSlotInfo Front_Kontakt_02 {
+     Offset 0 0 0
+     Prefab "{23A0A599CA92158D}Prefabs/Vehicles/Tracked/VehParts/MOD3/ArmorFront_02.et"
+    }
+    RegisteringComponentSlotInfo Front_Kontakt_03 {
+     Offset 0 0 0
+     Prefab "{C63CE960C67782E6}Prefabs/Vehicles/Tracked/VehParts/MOD3/ArmorFront_03.et"
+    }
+    RegisteringComponentSlotInfo Front_Kontakt_04 {
+     Offset 0 0 0
+     Prefab "{FB08CC58B31B0BD1}Prefabs/Vehicles/Tracked/VehParts/MOD3/ArmorFront_04.et"
+    }
+    RegisteringComponentSlotInfo Front_Kontakt_05 {
+     Offset 0 0 0
+     Prefab "{1E9480A1BFFE9CBA}Prefabs/Vehicles/Tracked/VehParts/MOD3/ArmorFront_05.et"
+    }
+    RegisteringComponentSlotInfo Front_Kontakt_06 {
+     Offset 0 0 0
+     Prefab "{72C0B441033A1394}Prefabs/Vehicles/Tracked/VehParts/MOD3/ArmorFront_06.et"
+    }
+    RegisteringComponentSlotInfo Front_Kontakt_07 {
+     Offset 0 0 0
+     Prefab "{975CF8B80FDF84FF}Prefabs/Vehicles/Tracked/VehParts/MOD3/ArmorFront_07.et"
+    }
+    RegisteringComponentSlotInfo Front_Kontakt_08 {
+     Offset 0 0 0
+     Prefab "{1400E87928EB0AD8}Prefabs/Vehicles/Tracked/VehParts/MOD3/MOD3_base.et"
+    }
+    RegisteringComponentSlotInfo Front_Kontakt_09 {
+     Offset -0.0516 -0.0477 0
+     Prefab "{305F4AF05547BD97}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArmNet_01.et"
+    }
+    RegisteringComponentSlotInfo Front_Kontakt_10 {
+     Offset 0.0516 -0.0477 0
+     Prefab "{7172C05B946B118E}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArmNet_01.et"
+    }
+    RegisteringComponentSlotInfo Left_Kontakt_01 {
+     Offset 0.0476 -0.0586 0
+     Prefab "{F86A126864D5B90F}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArmPanel_01.et"
+    }
+    RegisteringComponentSlotInfo Left_Kontakt_02 {
+     Offset 0.0476 -0.0586 0
+     Prefab "{943E2688D8113621}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArmPanel_02.et"
+    }
+    RegisteringComponentSlotInfo Left_Kontakt_03 {
+     Offset 0.0476 -0.0586 0
+     Prefab "{71A26A71D4F4A14A}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArmPanel_03.et"
+    }
+    RegisteringComponentSlotInfo Left_Kontakt_04 {
+     Offset 0.0476 -0.0586 -0.6218
+     Prefab "{71A26A71D4F4A14A}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArmPanel_03.et"
+    }
+    RegisteringComponentSlotInfo Left_Kontakt_05 {
+     Offset 0.0476 -0.0586 -1.2492
+     Prefab "{71A26A71D4F4A14A}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArmPanel_03.et"
+    }
+    RegisteringComponentSlotInfo Left_Kontakt_06 {
+     Offset 0.0476 -0.0586 -1.8816
+     Prefab "{71A26A71D4F4A14A}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArmPanel_03.et"
+    }
+    RegisteringComponentSlotInfo Right_Kontakt_01 {
+     Offset 0 -0.0586 0
+     Prefab "{D05CC669256325BF}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArmPanel_01.et"
+    }
+    RegisteringComponentSlotInfo Right_Kontakt_02 {
+     Offset 0 -0.0586 0
+     Prefab "{BC08F28999A7AA91}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArmPanel_02.et"
+    }
+    RegisteringComponentSlotInfo Right_Kontakt_03 {
+     Offset 0 -0.0586 0
+     Prefab "{5994BE7095423DFA}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArmPanel_03.et"
+    }
+    RegisteringComponentSlotInfo Right_Kontakt_04 {
+     Offset 0 -0.0586 -0.6218
+     Prefab "{5994BE7095423DFA}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArmPanel_03.et"
+    }
+    RegisteringComponentSlotInfo Right_Kontakt_05 {
+     Offset 0 -0.0586 -1.2492
+     Prefab "{5994BE7095423DFA}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArmPanel_03.et"
+    }
+    RegisteringComponentSlotInfo Right_Kontakt_06 {
+     Offset 0 -0.0586 -1.8816
+     Prefab "{5994BE7095423DFA}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArmPanel_03.et"
+    }
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{44BAC3CBE9DD3249}Prefabs/Vehicles/Tracked/VehParts/Turret/T72B3_turret.et"
+    }
+    RegisteringComponentSlotInfo RearARM : Front_Kontakt_10 {
+     Offset 0.0516 0 0.08
+     Prefab "{2F19D2291DDA287B}Prefabs/Vehicles/Tracked/VehParts/MOD3/CenterRearNet_01.et"
+    }
+    RegisteringComponentSlotInfo RearARM_01 : Front_Kontakt_10 {
+     Offset 0.0516 0 0.08
+     Prefab "{408820C68DE9F170}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftRearNet_01.et"
+    }
+    RegisteringComponentSlotInfo RearARM_02 : Front_Kontakt_10 {
+     Offset 0.0516 0 0.08
+     Prefab "{F5F768F9E2C3FFCC}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightRearNet_01.et"
+    }
+    RegisteringComponentSlotInfo LTARM : Left_Kontakt_06 {
+     Offset 0.0476 -0.0586 0
+     Prefab "{C02B296E8C56C3A9}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArm_01.et"
+    }
+    RegisteringComponentSlotInfo LTARM_01 : Left_Kontakt_06 {
+     Offset 0.0476 -0.0586 0
+     Prefab "{AC7F1D8E30924C87}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArm_02.et"
+    }
+    RegisteringComponentSlotInfo LTARM_02 : Left_Kontakt_06 {
+     Offset 0.0476 -0.0586 0
+     Prefab "{49E351773C77DBEC}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArm_03.et"
+    }
+    RegisteringComponentSlotInfo LTARM_03 : Left_Kontakt_06 {
+     Offset 0.0476 -0.0586 -0.6229
+     Prefab "{49E351773C77DBEC}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArm_03.et"
+    }
+    RegisteringComponentSlotInfo LTARM_04 : Left_Kontakt_06 {
+     Offset 0.0476 -0.0586 -1.2492
+     Prefab "{49E351773C77DBEC}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArm_03.et"
+    }
+    RegisteringComponentSlotInfo LTARM_05 : Left_Kontakt_06 {
+     Offset 0.0476 -0.0586 -1.8816
+     Prefab "{49E351773C77DBEC}Prefabs/Vehicles/Tracked/VehParts/MOD3/LeftArm_03.et"
+    }
+    RegisteringComponentSlotInfo RTARM : Right_Kontakt_06 {
+     Offset 0 -0.0586 0
+     Prefab "{1A18AB9EF20B3F25}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArm_01.et"
+    }
+    RegisteringComponentSlotInfo RTARM_01 : Right_Kontakt_06 {
+     Offset 0 -0.0586 0
+     Prefab "{764C9F7E4ECFB00B}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArm_02.et"
+    }
+    RegisteringComponentSlotInfo RTARM_02 : Right_Kontakt_06 {
+     Offset 0 -0.0586 0
+     Prefab "{93D0D387422A2760}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArm_03.et"
+    }
+    RegisteringComponentSlotInfo RTARM_03 : Right_Kontakt_06 {
+     Offset 0 -0.0586 -0.6229
+     Prefab "{93D0D387422A2760}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArm_03.et"
+    }
+    RegisteringComponentSlotInfo RTARM_04 : Right_Kontakt_06 {
+     Offset 0 -0.0586 -1.2492
+     Prefab "{93D0D387422A2760}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArm_03.et"
+    }
+    RegisteringComponentSlotInfo RTARM_05 : Right_Kontakt_06 {
+     Offset 0 -0.0586 -1.8816
+     Prefab "{93D0D387422A2760}Prefabs/Vehicles/Tracked/VehParts/MOD3/RightArm_03.et"
+    }
+   }
+  }
+ }
+ coords 0 0 0.063
+}

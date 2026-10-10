@@ -1,0 +1,30 @@
+Vehicle : "{01F65EFB8D767A91}Prefabs/Vehicles/Wheeled/UAZ452/UAZ452_cargo.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68F75A07FD99CF81}" {
+     SourceMaterial "uaz452_body"
+     AssignedMaterial "{4155A87BEA770E89}Assets/Vehicles/Wheeled/UAZ452/Data/uaz452_body_RU.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    m_sFaction "USSR"
+    m_aAutoLabels {
+     FACTION_USSR SIZE_M VEHICLE_CAR
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{62F4A2016E478678}" {
+      m_BudgetType RANK_PRIVATE
+      m_Value 1
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+ }
+}

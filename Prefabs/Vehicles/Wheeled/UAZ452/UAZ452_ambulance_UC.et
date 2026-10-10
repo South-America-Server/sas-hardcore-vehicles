@@ -1,0 +1,30 @@
+Vehicle : "{43C4AF1EEBD001CE}Prefabs/Vehicles/Wheeled/UAZ452/UAZ452_ambulance.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68F2FCB0227B7FA8}" {
+     SourceMaterial "uaz452_body"
+     AssignedMaterial "{72C33B8939345F01}Assets/Vehicles/Wheeled/UAZ452/Data/uaz452_body_UC.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_sFaction "US"
+    m_aAuthoredLabels {
+     ENTITYTYPE_VEHICLE TRAIT_MEDICAL TRAIT_SUPPLYSTORAGE_SMALL TRAIT_PASSENGERS_SMALL
+    }
+    m_aAutoLabels {
+     FACTION_US SIZE_M VEHICLE_CAR
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5D7E924E84B181BC}" {
+   MaxCumulativeVolume 50000
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "US"
+  }
+ }
+}

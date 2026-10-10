@@ -1,0 +1,118 @@
+Vehicle : "{72E301CF61366898}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_armaments.et" {
+ ID "5A7CEB06421662F8"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{64F48B50845FA4E0}" {
+     SourceMaterial "m_PRT_Windows_opened_FCD51D86A834D109"
+     AssignedMaterial "{FCD51D86A834D109}Assets/_SharedMaterials/VehicleParts/m_PRT_Windows_opened.emat"
+    }
+    MaterialAssignClass "{68FEB8CC04238DDB}" {
+     SourceMaterial "Exterier_35715EB3956D22B9"
+     AssignedMaterial "{3AD699231E40AE3C}Assets/Vehicles/Helicopters/Mi8/Data/Mi8_Body_black.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#WCS-Vehicle_Mi8MT_Armed_Name - #WCS-Weapon_B8V20A_Name"
+    m_Image "{7914A7F3A56EBDA1}UI/Textures/EditorPreviews/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_rockets.edds"
+    m_sFaction "USSR"
+    m_aAutoLabels +{
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 8500
+     }
+     SCR_EntityBudgetValue "{611E87CA7FF4ED82}" {
+      m_BudgetType RANK_CAPTAIN
+      m_Value 5
+     }
+     SCR_EntityBudgetValue "{691CAB03C42633D2}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 1200
+     }
+     SCR_EntityBudgetValue "{691CAB03CB5E1813}" {
+      m_BudgetType WCS_COOLDOWN_DURATION
+      m_Value 100
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  BaseVehicleNodeComponent "{57DA667544C3090A}" {
+   components {
+    BaseHUDComponent "{50F09A38B4352300}" {
+     InfoDisplays {
+      WCS_Armament_WeaponInfoVehicle "{62CEE7E7CACC9CBE}" {
+       m_bIsEnabled 1
+      }
+      SCR_WeaponInfo_MultiWeaponTurret "{645E8659E6F1BB74}" {
+       m_bIsEnabled 0
+      }
+     }
+    }
+   }
+  }
+  WCS_Armament_LoadoutComponent "{68FEB8CD1DE9AC00}" {
+   m_ArmamentGroups {
+    WCS_ArmamentWeaponGroup "{68FEB8CD1DE9AC09}" {
+     prefab "{77BFDD5F139D84D5}Prefabs/Weapons/AircraftWeapons/RocketPods/B8V20A/Pod_B8V20A.et"
+     weaponsInfo {
+      WCS_ArmamentWeaponInfo "{68FEB8CD1DE9AC0B}" {
+       Position PointInfo "{68FEB8CD1DE9AC0D}" {
+        Offset -3.4276 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CD1DE9AC0F}" {
+       Position PointInfo "{68FEB8CD1DE99E7D}" {
+        Offset 3.4331 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CD1DE99E66}" {
+       Position PointInfo "{68FEB8CD1DE99E64}" {
+        Offset -2.8748 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CD1DEA3547}" {
+       Position PointInfo "{68FEB8CD1DEA3549}" {
+        Offset 2.8673 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CD1DEA2E12}" {
+       Position PointInfo "{68FEB8CD1DEA2E13}" {
+        Offset -2.2173 1.4565 -0.5535
+       }
+      }
+      WCS_ArmamentWeaponInfo "{68FEB8CD1DEA2E10}" {
+       Position PointInfo "{68FEB8CD1DEA2E11}" {
+        Offset 2.2173 1.4565 -0.5535
+       }
+      }
+     }
+     fireModes {
+      WCS_Armament_WeaponSingleFireMode "{68FEB8CD1DEA2E17}" {
+       m_iFireIntervalMS 200
+      }
+      WCS_Armament_WeaponSalvoFireMode "{68FEB8CD1DEA2E2F}" {
+      }
+      WCS_Armament_WeaponRippleFireMode "{68FEB8CD1DEA2E2C}" {
+      }
+      WCS_Armament_WeaponFullRippleFireMode "{68FEB8CD1DEA2E22}" {
+      }
+     }
+    }
+   }
+  }
+  WeaponSlotComponent "{68FEB8CD1DEA2E21}" {
+   shouldHandleObstruction 0
+   AttachType InventoryStorageSlot Armament {
+    PivotID "Scene_Root"
+   }
+   WeaponTemplate "{52120E4BA120661B}Prefabs/Weapons/Core/Armament_Empty.et"
+   WeaponSlotIndex 0
+  }
+ }
+}

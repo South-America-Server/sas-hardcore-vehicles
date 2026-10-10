@@ -1,0 +1,25 @@
+Vehicle : "{281E529C8631269E}Prefabs/Vehicles/Wheeled/BTR70/BTR70_KBA105_9M113_Tan.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 2700
+     }
+     SCR_EntityBudgetValue "{5EF07CE1D3329EE6}" {
+      m_BudgetType RANK_CAPTAIN
+      m_Value 5
+     }
+     SCR_EntityBudgetValue "{6A53085ADE743A82}" {
+      m_Value 320
+     }
+     SCR_EntityBudgetValue "{6A79627EDAE8679B}" {
+      m_BudgetType WCS_COOLDOWN_DURATION
+      m_Value 100
+     }
+    }
+   }
+  }
+ }
+}

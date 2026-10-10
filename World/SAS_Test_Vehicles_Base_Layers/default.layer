@@ -1,0 +1,54 @@
+Vehicle BTR70_KBA105_Green1 : "{09B071FCB865C208}Prefabs/Vehicles/Wheeled/BTR70/BTR70_KBA105_Green.et" {
+ coords 1267.401 39 2101.294
+ angles 0 -35.562 0
+}
+Vehicle BTR70_KBA105_9M113_Tan1 : "{281E529C8631269E}Prefabs/Vehicles/Wheeled/BTR70/BTR70_KBA105_9M113_Tan.et" {
+ coords 1294.578 39 2118.6
+ angles 0 -31.791 0
+}
+Vehicle CIE_TIGR_NSV1 : "{2B767A3D4754CDC1}Prefabs/Vehicles/Wheeled/TIGR/CIE_TIGR_NSV.et" {
+ coords 1167.407 39 2271.362
+ angles 0 144.238 0
+}
+$grp Vehicle : "{440395ED1CD32B6E}Prefabs/Vehicles/Wheeled/TIGR/CIE_TIGR_Base.et" {
+ CIE_TIGR_Base1 {
+  coords 1163.536 39 2268.814
+  angles 0 144.305 0
+ }
+ CIE_TIGR_Base2 {
+  coords 1171.503 39 2274.3
+  angles 0 145.664 0
+ }
+}
+Vehicle BTR70_KBA105_9M113_Green_Conflict1 : "{48DF065E616A1D40}Prefabs/Vehicles/Wheeled/Conflict_Variants/BTR70_KBA105_9M113_Green_Conflict.et" {
+ coords 1175.734 39 2278.936
+ angles 0 144.768 0
+}
+Vehicle BTR70_KBA105_9M113_Base1 : "{5F74CD404FA8103F}Prefabs/Vehicles/Wheeled/BTR70/BTR70_KBA105_9M113_Base.et" {
+ coords 1276.756 39 2107.383
+ angles 0 -35.116 0
+}
+Vehicle BTR70_KBA105_9M113_Green1 : "{5F74CD404FA81040}Prefabs/Vehicles/Wheeled/BTR70/BTR70_KBA105_9M113_Green.et" {
+ coords 1284.544 39 2112.327
+ angles 0 -33.136 0
+}
+Vehicle BTR70_KBA105_9M113_Tan_Conflict1 : "{702B8D91ABB4D02D}Prefabs/Vehicles/Wheeled/Conflict_Variants/BTR70_KBA105_9M113_Tan_Conflict.et" {
+ coords 1180.159 39 2282.07
+ angles 0 145.483 0
+}
+Vehicle BTR70_KBA105_Tan1 : "{9530A98D2666BC8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_KBA105_Tan.et" {
+ coords 1317.405 39 2132.298
+ angles 0 -33.984 0
+}
+Vehicle BTR70_KBA105_Tan_Conflict1 : "{ACEA1CABC6760FDE}Prefabs/Vehicles/Wheeled/Conflict_Variants/BTR70_KBA105_Tan_Conflict.et" {
+ coords 1190.178 39 2289.011
+ angles 0 145.966 0
+}
+Vehicle BTR70_KBA105_Base1 : "{C851AA513BB5F915}Prefabs/Vehicles/Wheeled/BTR70/BTR70_KBA105_Base.et" {
+ coords 1305.357 39.013 2125.519
+ angles 0 -33.978 0
+}
+Vehicle BTR70_KBA105_Green_Conflict1 : "{F2E8F463BCF1D580}Prefabs/Vehicles/Wheeled/Conflict_Variants/BTR70_KBA105_Green_Conflict.et" {
+ coords 1185.213 39 2285.392
+ angles 0 145.829 0
+}

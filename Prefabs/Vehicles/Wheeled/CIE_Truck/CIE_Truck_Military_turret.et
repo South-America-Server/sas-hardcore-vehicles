@@ -1,0 +1,18 @@
+Vehicle : "{1BAFBA87A391FFBB}Prefabs/Vehicles/Wheeled/CIE_Truck/CIE_Truck_Military.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 600
+     }
+     SCR_EntityBudgetValue "{69E8015E7F69E1B2}" {
+      m_BudgetType RANK_SERGEANT
+      m_Value 3
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,28 @@
+Vehicle : "{B7A8BAA37CB0AC2B}Prefabs/Vehicles/Wheeled/LAV25/LAV25_MERDC.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_sFaction "US"
+    m_aAuthoredLabels + {
+     WEAR_RHS_VKPO_TRIADA
+    }
+    m_aAutoLabels {
+     FACTION_US FACTION_NONE SIZE_M
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 2000
+     }
+     SCR_EntityBudgetValue "{64E899E47BBE754B}" {
+      m_Value 125
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "US"
+  }
+ }
+ coords 76.394 1 1568.547
+}

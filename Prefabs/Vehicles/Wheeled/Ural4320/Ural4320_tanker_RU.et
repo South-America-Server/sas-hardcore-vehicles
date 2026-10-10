@@ -1,0 +1,60 @@
+Vehicle : "{4C81D7ED8F8C0D87}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tanker.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68FE32F6C1D8ED13}" {
+     SourceMaterial "Ural_Body"
+     AssignedMaterial "{74641A1DB0B893C8}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Body_RU.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_sFaction "USSR"
+    m_aAutoLabels {
+     FACTION_USSR SIZE_M VEHICLE_TRUCK FACTION_RHS_AFRF
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{615E87EBB2B82970}" {
+      m_BudgetType RANK_PRIVATE
+      m_Value 1
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5916C58171230A92}" {
+   MaxCumulativeVolume 40000
+   MultiSlots {
+    MultiSlotConfiguration "{5A60D38EDB3709A9}" {
+     SlotTemplate InventoryStorageSlot Bandages {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{5E86A8C920185949}" {
+     SlotTemplate InventoryStorageSlot Jerrycan {
+      Enabled 1
+     }
+    }
+    MultiSlotConfiguration "{68FE32F6191E5B40}" {
+     SlotTemplate InventoryStorageSlot Jerrycan {
+      Enabled 1
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo Label_L {
+     Prefab "{1765F41CA99417F5}Prefabs/Vehicles/Shared/decal_vehicle_label_RU.et"
+    }
+    EntitySlotInfo Label_R {
+     Prefab "{1765F41CA99417F5}Prefabs/Vehicles/Shared/decal_vehicle_label_RU.et"
+    }
+   }
+  }
+ }
+}

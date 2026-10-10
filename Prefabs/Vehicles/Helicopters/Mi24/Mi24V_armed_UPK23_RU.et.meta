@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2A4ABF1D9A3AF5DA}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_armed_UPK23_RU.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

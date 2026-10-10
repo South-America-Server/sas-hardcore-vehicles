@@ -1,0 +1,23 @@
+GenericEntity : "{2F088A1CDD3FB2F1}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_repair_box.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{68FE32FF16150FD3}" {
+     SourceMaterial "Ural_4320_Repair_Exterior_B8E9F7A30F1A9999"
+     AssignedMaterial "{6940CFFD342BFA70}Assets/RESKIN/Ural4320/Data/Ural_Back_UK.emat"
+    }
+   }
+  }
+  SCR_RepairSupportStationComponent "{5E1CF55598C1E8E7}" {
+   m_fRange 18
+  }
+  SCR_ResourceComponent "{68FE32FF70951191}" {
+   m_aContainers {
+    SCR_ResourceContainer "{68FE32FF7095119F}" {
+     m_fResourceValueMax 800
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C7013ECF40CAC1AA}Prefabs/Vehicles/Wheeled/CIE_Truck/CIE_Truck_Military_turret.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

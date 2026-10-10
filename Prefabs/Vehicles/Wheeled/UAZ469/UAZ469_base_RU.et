@@ -1,0 +1,75 @@
+Vehicle : "{99F1610551D54D17}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{66A10587D6334E51}" {
+     SourceMaterial "UAZ469_Body"
+     AssignedMaterial "{AD3DF727009CACB3}Assets/RESKIN/UAZ469/Data/UAZ469_Body_RU.emat"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5AD4F813E67ECB5D}" {
+   MaxCumulativeVolume 80000
+   MultiSlots {
+    MultiSlotConfiguration "{66A105871E9A75EE}" {
+     SlotTemplate InventoryStorageSlot Wrench {
+      Prefab "{33B2DFDCD0EBA3DB}Prefabs/Items/Equipment/Kits/RepairKit_01/RepairKit_01_wrench.et"
+     }
+     NumSlots 2
+    }
+    MultiSlotConfiguration "{66A105871E9A75DD}" {
+     SlotTemplate InventoryStorageSlot Jerrycan {
+      Prefab "{12D5AD21E383B768}Prefabs/Items/Fuel/Jerrycan_01/Jerrycan_01_item.et"
+     }
+     NumSlots 1
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  WCS_Armament_VehicleCameraComponent "{66A105871E9A75D1}" {
+   m_Cameras {
+    WCS_VehicleCameraProps "{66328D2B63FAE763}" : "{7C5E665513FD68BE}Prefabs/Vehicles/Core/Configs/WCS_Armaments_VehicleCameraProps_Mirror_Left.conf" {
+     m_Position PointInfo "{66593E66042B55BB}" {
+      PivotID "Scene_Root"
+      Offset -0.9605 1.5966 0.8075
+      Angles 0 180 0
+     }
+    }
+    WCS_VehicleCameraProps "{66328D2B30FE4775}" : "{731F060C6640D6B1}Prefabs/Vehicles/Core/Configs/WCS_Armaments_VehicleCameraProps_Mirror_Center.conf" {
+     m_Position PointInfo "{66593E66042B55BB}" {
+      PivotID "Scene_Root"
+      Offset 0 1.778 0.5233
+      Angles 0 180 0
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{66328D2BC137CCA8}" : "{734E65C89AC522E9}Prefabs/Vehicles/Core/Configs/WCS_Armaments_UserActionContext_Mirror_Left.conf" {
+     Position PointInfo "{66593E603D4A81E7}" {
+      PivotID "Scene_Root"
+      Offset -0.9045 1.5966 0.8075
+      Angles 1.7087 146.63338 -1.5726
+     }
+    }
+    UserActionContext "{66328D2BBB66E532}" : "{EF5FD613C7BE37D0}Prefabs/Vehicles/Core/Configs/WCS_Armaments_UserActionContext_Mirror_Center.conf" {
+     Position PointInfo "{66593E603D4A81E7}" {
+      PivotID "Scene_Root"
+      Offset -0.0077 1.7715 0.5288
+      Angles -13.3354 -152.3627 0
+     }
+    }
+   }
+   additionalActions {
+    WCS_Armament_VehicleCameraAction "{66328D2B2D48264E}" : "{CEA6F20BF23FD8D5}Prefabs/Vehicles/Core/Configs/WCS_Armaments_VehicleCameraAction_Mirror_Left.conf" {
+    }
+    WCS_Armament_VehicleCameraAction "{66328D2B14602FB9}" : "{3564E0459A9531FC}Prefabs/Vehicles/Core/Configs/WCS_Armaments_VehicleCameraAction_Mirror_Center.conf" {
+    }
+   }
+  }
+ }
+}

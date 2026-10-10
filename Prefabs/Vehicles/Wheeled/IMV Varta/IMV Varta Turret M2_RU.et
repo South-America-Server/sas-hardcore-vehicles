@@ -1,0 +1,65 @@
+Vehicle : "{6E48DF0AD0F5E925}Prefabs/Vehicles/Wheeled/IMV Varta/IMV Varta.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_Image "{A3103A574D45DB6E}UI/Varta_turret.edds"
+    m_sFaction "USSR"
+    m_aAutoLabels {
+     FACTION_USSR SIZE_M VEHICLE_CAR
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 1350
+     }
+     SCR_EntityBudgetValue "{69232BA42AC6C53D}" {
+      m_BudgetType RANK_SERGEANT
+      m_Value 3
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{650F645EA69FD63B}" {
+   MultiSlots {
+    MultiSlotConfiguration "{69232BA455ECE094}" {
+     SlotTemplate InventoryStorageSlot Bandages {
+      Prefab "{B8921B7BFE8CAEF0}Prefabs/Weapons/Magazines/Box_127x99_M2_100rnd_Ball.et"
+     }
+     NumSlots 4
+    }
+    MultiSlotConfiguration "{69232BA455ECE080}" {
+     SlotTemplate InventoryStorageSlot Bandages {
+      Prefab "{33B2DFDCD0EBA3DB}Prefabs/Items/Equipment/Kits/RepairKit_01/RepairKit_01_wrench.et"
+     }
+     NumSlots 1
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  CarProcAnimComponent "{A201E6A6F82F2CDA}" {
+   Parameters {
+    ProcAnimParams "{69232BA455ECE086}" {
+     ResourceName "{FAF66D16D6E25948}Assets/Vehicles/Wheeled/Ural4320/Ural4320_suspension.pap"
+     BoneNames {
+      "v_axle_01" "v_axle_02" ""
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Hatch {
+     PivotID "v_hatch"
+     Offset 0 -0.2548 0.3567
+     Prefab "{B438DD783E7D8DB6}Prefabs/Vehicles/Wheeled/IMV Varta/VehParts/Varta_turret_M2.et"
+     RegisterActions 1
+     RegisterControllers 1
+     RegisterWeapons 1
+     RegisterCompartments 1
+    }
+   }
+  }
+ }
+}

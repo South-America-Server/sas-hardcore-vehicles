@@ -1,0 +1,140 @@
+Vehicle : "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68FE4EAD45D99050}" {
+     SourceMaterial "BTR_70_base_exterior_Body"
+     AssignedMaterial "{5B2F425D9A8AB065}Assets/Vehicles/Wheeled/BTR70/Data/BTR_70_base_exterior_Body_RU.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_sFaction "USSR"
+    m_aAutoLabels {
+     FACTION_USSR SIZE_M
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 1500
+     }
+     SCR_EntityBudgetValue "{5EF07CE1D3329EE6}" {
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{59168B38F20DFF74}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5A60D38E3CF4827A}" {
+     SlotTemplate InventoryStorageSlot Bandages {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{5A60D38E3DCB490D}" {
+     SlotTemplate InventoryStorageSlot RPKammunition {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{5E86A8C91E958185}" {
+     SlotTemplate InventoryStorageSlot Jerrycan {
+      Enabled 1
+     }
+    }
+    MultiSlotConfiguration "{5EB0D397DC73FCA8}" {
+     SlotTemplate InventoryStorageSlot Jerrycan {
+      Enabled 1
+     }
+    }
+    MultiSlotConfiguration "{68FE4EAAC6CAB07F}" {
+     SlotTemplate InventoryStorageSlot Backpack {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{68FE4EAAC6CAB067}" {
+     SlotTemplate InventoryStorageSlot ATMine {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{68FE4EAAC6CAB069}" {
+     SlotTemplate InventoryStorageSlot MineFlag {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{68FE4EAAC6CA8FC8}" {
+     SlotTemplate InventoryStorageSlot KPVTAmmo {
+      Prefab "{EA806763FE4EDDDF}Prefabs/Weapons/Magazines/Box_145x114_KPVT_50rnd_APIT.et"
+     }
+    }
+    MultiSlotConfiguration "{68FE4EAAC6CA8FCA}" {
+     SlotTemplate InventoryStorageSlot PKMTAmmo {
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+  SCR_WheeledDamageManagerComponent "{141326E9FD94FE40}" {
+   "Additional hit zones" {
+    SCR_FlammableHitZone Hull {
+     "Incendiary multiplier" 2
+     m_fIncendiaryReduction 4
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{68FE4EAAC6CA8FFD}" {
+     ContextName "rearm"
+     Position PointInfo "{68FE4EAAC6CA8FFF}" {
+      Offset 0.0025 1.8468 -0.3123
+     }
+     Radius 0.4
+    }
+   }
+   additionalActions {
+    WCS_RearmVehicleAtRepairStationAction "{68FE4EAAC6CA8FE5}" {
+     ParentContextList {
+      "door_l01" "door_r01"
+     }
+     UIInfo UIInfo "{68FE4EAAC6CA8FE7}" {
+      Name "Rearm 114mm KPVT"
+     }
+     Duration 10
+     "Sort Priority" 25
+     m_bLoopAction 0
+     m_eShownInVehicleState NOT_IN_VEHICLE
+     m_aRearmData {
+      WCS_VehicleRearmData "{68FE4EAAC6CA8FE8}" {
+       magazine "{EA806763FE4EDDDF}Prefabs/Weapons/Magazines/Box_145x114_KPVT_50rnd_APIT.et"
+       amount 1
+       maxAmount 9
+       unitSupplyCost 10
+      }
+     }
+    }
+    WCS_RearmVehicleAtRepairStationAction "{68FE4EAAC6CA8FEA}" {
+     ParentContextList {
+      "door_l01" "door_r01"
+     }
+     UIInfo UIInfo "{68FE4EAAC6CA8FED}" {
+      Name "Rearm PKMT"
+     }
+     Duration 10
+     "Sort Priority" 26
+     m_bLoopAction 0
+     m_eShownInVehicleState NOT_IN_VEHICLE
+     m_aRearmData {
+      WCS_VehicleRearmData "{68FE4EAAC6CA8FEC}" {
+       magazine "{D8421F6E70B2FB4F}Prefabs/Weapons/Magazines/Box_762x54_PK_250rnd_4Ball_1Tracer.et"
+       amount 1
+       maxAmount 7
+       unitSupplyCost 10
+      }
+     }
+    }
+   }
+  }
+ }
+}
