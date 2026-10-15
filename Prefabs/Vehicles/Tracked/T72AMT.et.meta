@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{4AE9D080927D3CBA}Prefabs/Vehicles/Wheeled/S1203/S1203_base.et"
+ Name "{6C307FEDA7B678E1}Prefabs/Vehicles/Tracked/T72AMT.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
@@ -12,6 +12,8 @@ MetaFileClass {
   EntityTemplateResourceClass PS5 : PC {
   }
   EntityTemplateResourceClass HEADLESS : PC {
+  }
+  EntityTemplateResourceClass Xbox : PC {
   }
  }
 }

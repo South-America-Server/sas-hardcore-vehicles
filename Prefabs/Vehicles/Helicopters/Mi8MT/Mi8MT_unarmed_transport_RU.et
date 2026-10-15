@@ -17,11 +17,15 @@ Vehicle : "{DF5CCB7C0FF049F4}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_unarmed_tr
    m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
     m_sFaction "USSR"
     m_aAutoLabels + {
-     FACTION_RHS_AFRF
+     FACTION_RHS_AFRF FACTION_USSR
     }
     m_EntityBudgetCost {
      SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
       m_Value 5000
+     }
+     SCR_EntityBudgetValue "{6AB5709C3ADCCFF8}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 300
      }
     }
    }

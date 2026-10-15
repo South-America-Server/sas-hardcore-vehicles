@@ -1,4 +1,4 @@
-Vehicle : "{F203E2146C425605}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_ZU23_camo.et" {
+Vehicle : "{F203E2146C425605}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_ZU23.et" {
  ID "BBCBA43A9778AE21"
  components {
   MeshObject "{51DAA09FEFBFC0E7}" {
@@ -12,27 +12,28 @@ Vehicle : "{F203E2146C425605}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_ZU23_cam
   SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
    m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
     Name "#WCS-Vehicle_Ural4320_ZU23_Name"
-    m_Image "{6A3BAFBA1E2BEC09}UI/Textures/EditorPreviews/Vehicles/Wheeled/Ural4320/Ural432_ZU23_camo.edds"
+    m_Image "{6A3BAFBA1E2BEC09}UI/Textures/EditorPreviews/Vehicles/Wheeled/Ural4320/Ural4320_ZU23.edds"
     m_sFaction "US"
     m_aAuthoredLabels +{
     }
     m_aAutoLabels {
-     FACTION_US SIZE_M VEHICLE_TRUCK FACTION_RHS_AFRF
+     FACTION_US SIZE_M VEHICLE_TRUCK NONE
     }
     m_EntityBudgetCost {
      SCR_EntityBudgetValue "{6052A79ADDA6C7A8}" {
      }
      SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
-      m_Value 1500
+      m_Value 4500
      }
      SCR_EntityBudgetValue "{5EE71CA1677C234F}" {
      }
-     SCR_EntityBudgetValue "{68E6A67BBF9E531A}" {
-      m_Value 300
-     }
      SCR_EntityBudgetValue "{617A52EB00165295}" {
-      m_BudgetType RANK_LIEUTENANT
-      m_Value 4
+      m_BudgetType RANK_CAPTAIN
+      m_Value 5
+     }
+     SCR_EntityBudgetValue "{68E6A67BBF9E531A}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 2500
      }
      SCR_EntityBudgetValue "{68FF238E10402090}" {
       m_BudgetType WCS_COOLDOWN_DURATION
@@ -59,25 +60,28 @@ Vehicle : "{F203E2146C425605}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_ZU23_cam
    MultiSlots {
     MultiSlotConfiguration "{68F731BD336C7E8C}" {
      SlotTemplate InventoryStorageSlot ZU23_ammo {
-      Prefab "{8BD7CB61BD6AFD69}Prefabs/Weapons/Magazines/Box_23x152_ZU23_100rnd_2HEIT_1APIT.et"
+      Prefab "{8BD7CB61BD6AFD69}Prefabs/Weapons/Magazines/ZU23/Box_23x152_ZU23_100rnd_2HEIT_1APIT.et"
      }
      NumSlots 6
     }
    }
+  }
+  SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
+   m_fDustTopSpeed 60
   }
   SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
    "faction affiliation" "US"
   }
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
+    RegisteringComponentSlotInfo Cargo {
+     Prefab "{253EA4C6CE611ECB}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_ZU23_cargo.et"
+    }
     EntitySlotInfo Label_L {
      Prefab "{CF7AC10439D19D9D}Prefabs/Vehicles/Shared/decal_vehicle_label_UC.et"
     }
     EntitySlotInfo Label_R {
      Prefab "{CF7AC10439D19D9D}Prefabs/Vehicles/Shared/decal_vehicle_label_UC.et"
-    }
-    RegisteringComponentSlotInfo Cargo {
-     Prefab "{253EA4C6CE611ECB}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo_camo1_ZU23.et"
     }
    }
   }

@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{1107ED71D5CA3047}Prefabs/Vehicles/Wheeled/K17/APC_K17_Berezok_camo1_RU.et"
+ Name "{E19FA358977E1C38}Prefabs/Vehicles/Tracked/T72B3.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
@@ -12,6 +12,8 @@ MetaFileClass {
   EntityTemplateResourceClass PS5 : PC {
   }
   EntityTemplateResourceClass HEADLESS : PC {
+  }
+  EntityTemplateResourceClass Xbox : PC {
   }
  }
 }

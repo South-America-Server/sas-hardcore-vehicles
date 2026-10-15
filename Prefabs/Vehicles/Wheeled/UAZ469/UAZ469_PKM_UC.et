@@ -20,8 +20,6 @@ Vehicle : "{0B4DEA8078B78A9B}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_PKM.et" {
       m_Value 180
      }
      SCR_EntityBudgetValue "{648895FA34A72414}" {
-      m_BudgetType RANK_PRIVATE
-      m_Value 1
      }
     }
    }

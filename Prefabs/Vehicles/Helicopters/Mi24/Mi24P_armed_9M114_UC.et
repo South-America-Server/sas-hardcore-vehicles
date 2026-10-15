@@ -1,4 +1,4 @@
-Vehicle : "{38DE44985B0AD338}Prefabs/Vehicles/Helicopters/Mi24/Mi24P_base.et" {
+Vehicle : "{38DE44985B0AD338}Prefabs/Vehicles/Helicopters/Mi24/Mi24P_Base.et" {
  ID "57DA6675519A417B"
  components {
   MeshObject "{51DAA09FEFBFC0E7}" {
@@ -42,7 +42,7 @@ Vehicle : "{38DE44985B0AD338}Prefabs/Vehicles/Helicopters/Mi24/Mi24P_base.et" {
      }
      SCR_EntityBudgetValue "{629A82D79F5B3CE2}" {
       m_BudgetType WCS_XP_COST
-      m_Value 1700
+      m_Value 15000
      }
      SCR_EntityBudgetValue "{698B47E2B352F23C}" {
       m_BudgetType WCS_COOLDOWN_DURATION

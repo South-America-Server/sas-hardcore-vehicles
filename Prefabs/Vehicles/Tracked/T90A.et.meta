@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{7B7E2210A4C61D05}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_BM21.et"
+ Name "{6E2FBF3549A396D7}Prefabs/Vehicles/Tracked/T90A.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
@@ -12,6 +12,8 @@ MetaFileClass {
   EntityTemplateResourceClass PS5 : PC {
   }
   EntityTemplateResourceClass HEADLESS : PC {
+  }
+  EntityTemplateResourceClass Xbox : PC {
   }
  }
 }

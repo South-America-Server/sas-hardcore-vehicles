@@ -36,7 +36,7 @@ Vehicle : "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et" {
     m_Image "{DD3CB705A7DAF91D}UI/Textures/EditorPreviews/Vehicles/Wheeled/Ural4320/Ural4320_BM21.edds"
     m_sFaction "US"
     m_aAuthoredLabels + {
-     FACTION_USSR SIZE_M VEHICLE_TRUCK TRAIT_ARMED
+     FACTION_US SIZE_M VEHICLE_TRUCK TRAIT_ARMED
     }
     m_aAutoLabels {
      FACTION_US SIZE_M VEHICLE_TRUCK
@@ -47,7 +47,7 @@ Vehicle : "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et" {
      }
      SCR_EntityBudgetValue "{6A770D9689C375B5}" {
       m_BudgetType WCS_XP_COST
-      m_Value 550
+      m_Value 3000
      }
      SCR_EntityBudgetValue "{6A770D95F7462F05}" {
       m_BudgetType WCS_COOLDOWN_DURATION
@@ -68,6 +68,12 @@ Vehicle : "{4597626AF36C0858}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et" {
      }
     }
    }
+  }
+  SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
+   m_fDustTopSpeed 60
+  }
+  SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
+   m_fDustTopSpeed 60
   }
   SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
    m_fDustTopSpeed 60

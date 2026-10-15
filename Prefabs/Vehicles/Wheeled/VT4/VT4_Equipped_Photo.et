@@ -1,0 +1,29 @@
+Vehicle : "{97E399201765C9CF}Prefabs/Vehicles/Wheeled/VT4/VT4_base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{6719254ECCCA8D8D}" {
+     SourceMaterial "MAIN_EXTERIOR_PAINTJOB"
+     AssignedMaterial "{398BCCE87476061A}Assets/Vehicles/Wheeled/VT4/Data/MAIN_EXTERIOR_PAINTJOB_BTDF_TEST_MULTIPBR.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    m_sFaction "USSR"
+    m_aAuthoredLabels {
+     ENTITYTYPE_VEHICLE FACTION_USSR TRAIT_PASSENGERS_SMALL VEHICLE_CAR TRAIT_SUPPLYSTORAGE_SMALL
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 50
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "USSR"
+  }
+ }
+}

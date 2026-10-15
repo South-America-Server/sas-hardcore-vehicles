@@ -38,7 +38,8 @@ Vehicle : "{A8C732BE755F8BD0}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_base.et" {
      SCR_EntityBudgetValue "{629A82D4737471F8}" {
      }
      SCR_EntityBudgetValue "{629A82D79F5B3CE2}" {
-      m_Value 0
+      m_BudgetType WCS_XP_COST
+      m_Value 500
      }
     }
    }

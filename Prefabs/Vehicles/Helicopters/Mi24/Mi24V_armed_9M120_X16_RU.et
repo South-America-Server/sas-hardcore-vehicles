@@ -1,4 +1,4 @@
-Vehicle : "{9AA441DE6DAB6D94}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_armed_S8.et" {
+Vehicle : "{9AA441DE6DAB6D94}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_Armed_S8.et" {
  ID "57DA6675519A417B"
  components {
   MeshObject "{51DAA09FEFBFC0E7}" {
@@ -33,7 +33,7 @@ Vehicle : "{9AA441DE6DAB6D94}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_armed_S8.et
     }
     m_EntityBudgetCost {
      SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
-      m_Value 12000
+      m_Value 15000
      }
      SCR_EntityBudgetValue "{629A82D4737471F8}" {
       m_BudgetType RANK_COLONEL
@@ -41,7 +41,7 @@ Vehicle : "{9AA441DE6DAB6D94}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_armed_S8.et
      }
      SCR_EntityBudgetValue "{629A82D79F5B3CE2}" {
       m_BudgetType WCS_XP_COST
-      m_Value 1700
+      m_Value 15000
      }
      SCR_EntityBudgetValue "{691CAB07553E2A7C}" {
       m_BudgetType WCS_COOLDOWN_DURATION
@@ -66,7 +66,7 @@ Vehicle : "{9AA441DE6DAB6D94}Prefabs/Vehicles/Helicopters/Mi24/Mi24V_armed_S8.et
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
     RegisteringComponentSlotInfo Turret {
-     Prefab "{FBC085A0217D58AF}Prefabs/Vehicles/Helicopters/Mi24/VehParts/Weapons/Mi24_Turret_9m120_X16.et"
+     Prefab "{FBC085A0217D58AF}Prefabs/Vehicles/Helicopters/Mi24/VehParts/Weapons/Mi24V_Turret_9M120_X16.et"
     }
    }
   }

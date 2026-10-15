@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{440395ED1CD32B6E}Prefabs/Vehicles/Wheeled/Tigr/CIE_TIGR_Base.et"
+ Name "{6F4D5B56F4905A62}Prefabs/Vehicles/Wheeled/TIGR/Unarmed/GAZ_TIGR_v2_Unarmed_Green.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

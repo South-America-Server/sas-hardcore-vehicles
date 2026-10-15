@@ -47,6 +47,10 @@ Vehicle : "{20C37D5090E4E0E6}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_base
      }
      SCR_EntityBudgetValue "{611E87CA7FF4ED82}" {
      }
+     SCR_EntityBudgetValue "{6AB2766A612CC79A}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 350
+     }
     }
     m_aCrewEntityBudgetCost {
      SCR_EntityBudgetValue "{5C7AF24EB7F8DD21}" {

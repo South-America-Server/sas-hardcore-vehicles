@@ -1,0 +1,31 @@
+Vehicle : "{C74E9D7788208078}Prefabs/Vehicles/Wheeled/VT4/VT4_BTDF_Equipped.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{6719254ECCCA8D8D}" {
+     SourceMaterial "MAIN_EXTERIOR_PAINTJOB"
+     AssignedMaterial "{3125AB06B71C3922}Assets/Vehicles/Wheeled/VT4/Data/MAIN_EXTERIOR_PAINTJOB_TEST_MULTIPBR_UA.emat"
+    }
+    MaterialAssignClass "{6719254ECCCA8D8D}" {
+     SourceMaterial "MAIN_EXTERIOR_PAINTJOB"
+     AssignedMaterial "{3125AB06B71C3922}Assets/Vehicles/Wheeled/VT4/Data/MAIN_EXTERIOR_PAINTJOB_TEST_MULTIPBR_UA.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 50
+     }
+     SCR_EntityBudgetValue "{6A9531B600E9FB99}" {
+     }
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "US"
+  }
+ }
+}

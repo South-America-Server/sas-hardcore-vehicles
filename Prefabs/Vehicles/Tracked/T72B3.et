@@ -1,0 +1,25 @@
+Vehicle : "{E87F0D0B1C88BFD7}Prefabs/Vehicles/Tracked/T72B_RU.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 11000
+     }
+     SCR_EntityBudgetValue "{5EE71CA1677C234F}" {
+      m_BudgetType RANK_COLONEL
+      m_Value 7
+     }
+     SCR_EntityBudgetValue "{6A960672F99F3E2A}" {
+      m_Value 17000
+     }
+     SCR_EntityBudgetValue "{6AB8F4D0554E7EC7}" {
+      m_BudgetType WCS_COOLDOWN_DURATION
+      m_Value 100
+     }
+    }
+   }
+  }
+ }
+}

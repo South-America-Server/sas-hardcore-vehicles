@@ -5,7 +5,7 @@ Vehicle : "{1F9BB80C3EC3C891}Prefabs/Vehicles/Core/Wheeled_Car_Base.et" {
    m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
     m_EntityBudgetCost {
      SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
-      m_Value 2500
+      m_Value 3000
      }
      SCR_EntityBudgetValue "{68CF0A8A3E35A6E9}" {
       m_BudgetType RANK_CAPTAIN
@@ -13,7 +13,7 @@ Vehicle : "{1F9BB80C3EC3C891}Prefabs/Vehicles/Core/Wheeled_Car_Base.et" {
      }
      SCR_EntityBudgetValue "{6A852B35D46E8BAD}" {
       m_BudgetType WCS_XP_COST
-      m_Value 300
+      m_Value 3500
      }
      SCR_EntityBudgetValue "{6A852B35C6351033}" {
       m_BudgetType WCS_COOLDOWN_DURATION
@@ -21,6 +21,9 @@ Vehicle : "{1F9BB80C3EC3C891}Prefabs/Vehicles/Core/Wheeled_Car_Base.et" {
      }
     }
    }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "US"
   }
  }
 }

@@ -11,6 +11,10 @@ Vehicle : "{048D9D6B2DB1303D}Prefabs/Vehicles/Core/AUS_Helicopter_Base.et" {
       m_BudgetType RANK_CAPTAIN
       m_Value 5
      }
+     SCR_EntityBudgetValue "{6AB387116495D9F0}" {
+      m_BudgetType WCS_XP_COST
+      m_Value 500
+     }
     }
    }
   }
